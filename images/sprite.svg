@@ -1,0 +1,9 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" id="ic_arr_ver">
+    <line x1="5.24724" y1="7.33845" x2="11.2928" y2="1.29289" stroke="currentColor" stroke-width="2"></line>
+    <line y1="-1" x2="8.54971" y2="-1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 6.04565 8.07594)" stroke="currentColor" stroke-width="2"></line>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107 16" id="ic_arrow_hor">
+    <path d="M106.707 8.70711C107.098 8.31658 107.098 7.68342 106.707 7.29289L100.343 0.928932C99.9526 0.538408 99.3195 0.538408 98.9289 0.928932C98.5384 1.31946 98.5384 1.95262 98.9289 2.34315L104.586 8L98.9289 13.6569C98.5384 14.0474 98.5384 14.6805 98.9289 15.0711C99.3195 15.4616 99.9526 15.4616 100.343 15.0711L106.707 8.70711ZM0 9H106V7H0V9Z" fill="currentColor"></path>
+  </symbol>
+</svg>
