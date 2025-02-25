@@ -108,7 +108,7 @@ input[type=number]
     --font_size: 18px;
     --font_size_title: 54px;
     --font_size_title_big: 60px;
-    --font_family: 'Poppins', 'Arial', sans-serif;
+    --font_family: 'Poppins', 'Montserrat', 'Arial', sans-serif;
     --font_family2: 'Montserrat', 'Arial', sans-serif;
 }
 
@@ -254,56 +254,6 @@ button
 .block.middle_m2
 {
     margin-bottom: 94px;
-}
-
-
-
-.modal_btn > *
-{
-    pointer-events: none;
-}
-
-
-
-/*--------------
-    Fancybox
---------------*/
-.fancybox__backdrop
-{
-    background: rgba(0, 0, 0, .6);
-}
-
-
-.fancybox__slide
-{
-    padding: 40px;
-}
-
-
-.fancybox__content > .f-button.is-close-btn,
-.is-compact .fancybox__content > .f-button.is-close-btn
-{
-    top: 0;
-    right: 0;
-
-    opacity: 1;
-
-    --f-button-width: 34px;
-    --f-button-height: 34px;
-    --f-button-border-radius: 0;
-    --f-button-color: var(--text_color);
-    --f-button-hover-color: var(--text_color);
-    --f-button-svg-width: 14px;
-    --f-button-svg-height: 14px;
-    --f-button-bg: transparent;
-    --f-button-hover-bg: transparent;
-    --f-button-active-bg: transparent;
-}
-
-
-.fancybox__content > .f-button.is-close-btn svg
-{
-    stroke: none;
 }
 
 
@@ -677,7 +627,7 @@ header .langs .mini_modal .btn img
 .block_head .desc
 {
     font-size: 24px;
-    line-height: 40px;
+    line-height: calc(100% + 16px);
 }
 
 
@@ -1106,10 +1056,12 @@ header .langs .mini_modal .btn img
 
 .main_slider .swiper-button-next
 {
+    right: 50%;
     bottom: 80px;
 
     width: 234px;
     height: 183px;
+    margin-right: -955px;
 
     color: #c3e85b;
     border: 2px solid #c3e85b;
@@ -1156,7 +1108,7 @@ header .langs .mini_modal .btn img
     justify-content: space-between;
 
     min-height: 820px;
-    padding-top: 180px;
+    padding-top: 170px;
     padding-bottom: 80px;
 }
 
@@ -1221,7 +1173,7 @@ header .langs .mini_modal .btn img
 .main_slider .desc
 {
     font-size: 24px;
-    line-height: 40px;
+    line-height: calc(100% + 16px);
 
     margin-top: 24px;
 }
@@ -1329,8 +1281,8 @@ header .langs .mini_modal .btn img
     line-height: 33px;
 
     display: flex;
-    align-content: flex-start;
-    align-items: flex-start;
+    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
 
@@ -1338,7 +1290,7 @@ header .langs .mini_modal .btn img
     max-width: 100%;
     min-height: 183px;
     margin-right: 10px;
-    padding: 38px 41px 38px 33px;
+    padding: 38px 32px 38px 30px;
 
     color: #fff;
     border-radius: 23px 900px 900px 23px;
@@ -1354,9 +1306,16 @@ header .langs .mini_modal .btn img
 {
     align-self: center;
 
-    width: 364px;
+    width: 400px;
     max-width: 100%;
     margin-bottom: 0;
+}
+
+
+.about_info .block_head .desc
+{
+    width: 364px;
+    max-width: 100%;
 }
 
 
@@ -1365,6 +1324,38 @@ header .langs .mini_modal .btn img
 {
     width: calc(100% - 494px);
     margin-left: auto;
+}
+
+
+
+.about_info .mob_link
+{
+    display: none;
+    order: 3;
+
+    width: 100%;
+    margin-top: 40px;
+
+    text-align: center;
+}
+
+
+.about_info .mob_link a
+{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+
+    display: inline-block;
+
+    padding: 16px 40px;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 90px;
+    background: #a9ca4b;
 }
 
 
@@ -1788,7 +1779,7 @@ header .langs .mini_modal .btn img
 }
 
 
-.cases .block_head
+.cases .block_head.big_w
 {
     width: 508px;
     padding-right: 10px;
@@ -2015,6 +2006,35 @@ header .langs .mini_modal .btn img
 }
 
 
+.cases .mob_link
+{
+    display: none;
+    order: 3;
+
+    width: 100%;
+    margin-top: 32px;
+}
+
+
+.cases .mob_link a
+{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+
+    display: inline-block;
+
+    padding: 16px 40px;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 90px;
+    background: #a9ca4b;
+}
+
+
 
 .cases .more
 {
@@ -2226,7 +2246,7 @@ header .langs .mini_modal .btn img
 }
 
 
-.picture img
+.partners picture img
 {
     display: block;
 
@@ -3503,41 +3523,4 @@ footer .copyright
 {
     font-size: 14px;
     font-weight: 500;
-}
-
-
-
-/*-----------
-    PopUp
------------*/
-.modal
-{
-    display: none;
-    visibility: visible !important;
-
-    width: 480px;
-    max-width: 100%;
-    padding: 40px 50px;
-
-    color: var(--text_color);
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-}
-
-
-.modal_title
-{
-    font-size: var(--font_size_title);
-    font-weight: 700;
-    line-height: normal;
-
-    text-align: center;
-}
-
-
-.modal_desc
-{
-    margin-top: 24px;
-
-    text-align: center;
 }
