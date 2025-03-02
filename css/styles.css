@@ -513,6 +513,165 @@ header .langs .mini_modal .btn img
 
 
 
+header .mob_menu_btn
+{
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40px;
+    height: 32px;
+    margin-right: -8px;
+    margin-left: 24px;
+    padding: 8px;
+
+    color: currentColor;
+}
+
+
+header .mob_menu_btn span
+{
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    transition: .2s linear;
+
+    background: currentColor;
+}
+
+
+header .mob_menu_btn span:before,
+header .mob_menu_btn span:after
+{
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: .2s linear;
+
+    background: currentColor;
+}
+
+
+header .mob_menu_btn span:after
+{
+    top: 8px;
+}
+
+
+header .mob_menu_btn.active span
+{
+    background: none;
+}
+
+
+header .mob_menu_btn.active span:before
+{
+    top: 0;
+
+    transform: rotate(-45deg);
+}
+
+
+header .mob_menu_btn.active span:after
+{
+    top: 0;
+
+    transform: rotate(45deg);
+}
+
+
+
+/*---------------
+    Mob. menu
+---------------*/
+.mob_menu
+{
+    position: absolute;
+    z-index: 10;
+    top: 84px;
+    left: 100%;
+
+    width: calc(100% - 48px);
+    padding: 40px 0;
+
+    transition: .25s linear;
+    text-align: center;
+
+    color: #39439e;
+    border-radius: 20px;
+    background: #a9ca4b;
+    box-shadow: 0 0 0 12px rgba(57, 67, 158, .40);
+}
+
+
+.mob_menu.show
+{
+    transform: translateX(calc(-100% - 24px));
+}
+
+
+
+.mob_menu .menu
+{
+    font-size: 18px;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.mob_menu .menu a
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+
+.mob_menu .contacts_link
+{
+    margin-top: 40px;
+}
+
+
+.mob_menu .contacts_link a
+{
+    font-weight: 600;
+    line-height: 22px;
+
+    display: block;
+
+    padding: 10px 36px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border: 1px solid #39439e;
+    border-radius: 30px;
+    background: #39439e;
+}
+
+
+
 /*---------------
     Page head
 ---------------*/
@@ -1066,6 +1225,12 @@ header .langs .mini_modal .btn img
     color: #c3e85b;
     border: 2px solid #c3e85b;
     border-radius: 23px 900px 900px 23px;
+}
+
+
+.main_slider .swiper-pagination
+{
+    display: none;
 }
 
 
@@ -2280,6 +2445,9 @@ header .langs .mini_modal .btn img
 
 .contacts_info .block_head
 {
+    position: relative;
+    z-index: 3;
+
     margin-bottom: 320px;
 }
 

@@ -4,14 +4,356 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    :root
     {
-        padding: 20px;
+        --font_size: 15px;
+        --font_size_title: 36px;
+        --font_size_title_big: 36px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 145px;
+        height: 30px;
+    }
+
+
+    header .contacts_link
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 28px;
+
+        gap: 20px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        min-height: 717px;
+        padding-top: 124px;
+        padding-bottom: 48px;
+    }
+
+
+    .main_slider .head
+    {
+        font-size: 14px;
+
+        gap: 12px;
+    }
+
+
+    .main_slider .head .sep
+    {
+        height: 14px;
+    }
+
+
+    .main_slider .head picture,
+    .main_slider .head picture img
+    {
+        height: 28px;
+    }
+
+
+    .main_slider .desc
+    {
+        font-size: var(--font_size);
+        line-height: calc(100% + 8px);
+    }
+
+
+    .main_slider .items,
+    .main_slider .data.big .items
+    {
+        margin-top: 32px;
+    }
+
+
+    .main_slider .message
+    {
+        width: 100%;
+        margin-top: 32px;
+        padding: 20px 48px 20px 24px;
+    }
+
+
+    .main_slider .swiper-button-next
+    {
+        display: none;
+    }
+
+
+    .main_slider .swiper-pagination
+    {
+        display: flex;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .industries .info
+    {
+        width: 100%;
+        padding: 32px 48px 32px 24px;
+    }
+
+
+    .industries .info .name
+    {
+        font-size: 30px;
+    }
+
+
+    .industries .info .stats
+    {
+        margin-top: 20px;
+    }
+
+
+    .industries .info .stats .val
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .industries .image
+    {
+        width: 100%;
+        min-height: 300px;
+        margin-bottom: 24px;
+    }
+
+
+    .industries .image.mob_hide
+    {
+        display: none;
+    }
+
+
+    .about_info .mob_link
+    {
+        margin-top: 32px;
+    }
+
+
+    .about_info .mob_link a
+    {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .logos picture
+    {
+        height: 60px;
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .case
+    {
+        padding: 32px 24px;
+    }
+
+
+    .cases .case .name
+    {
+        font-size: 30px;
+
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .cases .case .name br
+    {
+        display: none;
+    }
+
+
+    .cases .case .image
+    {
+        order: 1;
+
+        margin-bottom: 24px;
+    }
+
+
+    .cases .case .industry
+    {
+        order: 3;
+    }
+
+
+    .cases .case .tags
+    {
+        order: 4;
+
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .cases .case .stats
+    {
+        order: 5;
+
+        width: 100%;
+        max-width: 100%;
+
+        gap: 16px;
+    }
+
+
+    .cases .case .stats > *:not(.sep)
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        width: 100%;
+        min-width: 100%;
+    }
+
+
+    .cases .case .stats .val
+    {
+        line-height: 100%;
+
+        margin-right: 20px;
+
+        white-space: nowrap;
+    }
+
+
+    .cases .case .stats .val + *
+    {
+        width: 100%;
+    }
+
+
+    .cases .case .stats .sep
+    {
+        width: 100%;
+        height: 1px;
+    }
+
+
+    .cases .mob_link
+    {
+        margin-top: 24px;
+    }
+
+
+    .cases .mob_link a
+    {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+    .cases .swiper-button-next,
+    .cases .swiper-button-prev
+    {
+        bottom: -54px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .contacts_info .block_head
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .contacts_info .image
+    {
+        top: 0;
+
+        width: 100%;
+    }
+
+
+    .contacts_info .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+
+    footer .logo img
+    {
+        width: 145px;
+        height: 30px;
+    }
+
+
+    footer .menu
+    {
+        display: none;
     }
 }

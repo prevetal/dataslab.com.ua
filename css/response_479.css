@@ -3,14 +3,230 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    :root
     {
-        padding: 16px;
+        --font_size: 15px;
+        --font_size_title: 32px;
+        --font_size_title_big: 32px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 60px;
+        height: 9px;
+    }
+
+
+    .swiper-button-prev
+    {
+        right: 72px;
+    }
+
+
+    .swiper-button-next .icon,
+    .swiper-button-prev .icon
+    {
+        width: 60px;
+        height: 9px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 145px;
+        height: 30px;
+    }
+
+
+    header .langs .btn span:first-child
+    {
+        display: none;
+    }
+
+
+    header .langs .btn span + span
+    {
+        margin-left: 0;
+    }
+
+
+    header .langs .mini_modal
+    {
+        width: 102px;
+    }
+
+
+    header .langs .mini_modal .btn
+    {
+        padding: 8px 0;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        min-height: 685px;
+        padding-top: 108px;
+    }
+
+
+    .main_slider .desc
+    {
+        font-size: 14px;
+    }
+
+
+    .main_slider .link a
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .main_slider .items,
+    .main_slider .data.big .items
+    {
+        font-size: 14px;
+
+        width: 100%;
+        max-width: 100%;
+        margin-top: 28px;
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+
+    .main_slider .items > *,
+    .main_slider .data.big .items > *
+    {
+        width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+
+
+    .main_slider .data .items br
+    {
+        display: none;
+    }
+
+
+    .main_slider .message
+    {
+        font-size: 14px;
+
+        margin-top: 28px;
+        padding: 16px 24px 16px 0;
+    }
+
+
+
+    /*----------------
+        Industries
+    ----------------*/
+    .industries .info
+    {
+        padding: 28px 40px 28px 24px;
+    }
+
+
+    .industries .info .name
+    {
+        font-size: 26px;
+    }
+
+
+    .industries .info .stats .val
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+    .industries .info .stats > *:before
+    {
+        height: calc(100% - 8px);
+    }
+
+
+    .industries .image
+    {
+        min-height: 288px;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .logos picture
+    {
+        height: 48px;
+    }
+
+
+    .cases .case .image
+    {
+        width: 180px;
+        height: 160px;
+
+        border-radius: 28px 600px 28px 28px;
+    }
+
+
+    .cases .case .name
+    {
+        font-size: 26px;
+    }
+
+
+    .cases .case .tags
+    {
+        gap: 8px;
+    }
+
+
+    .cases .mob_link a
+    {
+        padding: 16px 32px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .image
+    {
+        top: 28px;
+    }
+
+
+    .contacts_info .row
+    {
+        margin-left: 0;
+    }
+
+
+    .contacts_info .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .contacts_info .item .address
+    {
+        margin-top: 16px;
     }
 }

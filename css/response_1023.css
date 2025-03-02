@@ -4,15 +4,25 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    .swiper-button-next,
+    .swiper-button-prev
     {
-        padding: 24px;
+        width: 68px;
+        height: 10px;
+    }
+
+
+    .swiper-button-prev
+    {
+        right: 100px;
+    }
+
+
+    .swiper-button-next .icon,
+    .swiper-button-prev .icon
+    {
+        width: 68px;
+        height: 10px;
     }
 
 
@@ -20,55 +30,409 @@
     /*------------
         Header
     ------------*/
-    header
+    header .menu
     {
-        position: fixed;
-        z-index: 101;
-        top: 0;
-        right: 100%;
-        left: auto;
-
-        width: 325px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 0;
-
-        transition: transform .3s linear;
-
-        background: #fff;
-    }
-
-    header.show
-    {
-        transform: translateX(100%);
+        display: none;
     }
 
 
-    header .scroll
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
     {
-        display: flex;
-        overflow: auto;
-        flex-direction: column;
-
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        padding: 24px 0;
-
-        overscroll-behavior-y: contain;
+        font-size: var(--font_size);
+        line-height: calc(100% + 8px);
     }
 
 
 
     /*-----------------
-        Mob. header
+        Main slider
     -----------------*/
-    .mob_header
+    .main_slider .cont
+    {
+        min-height: 722px;
+        padding-top: 140px;
+        padding-bottom: 60px;
+    }
+
+
+    .main_slider .data,
+    .main_slider .data.big
+    {
+        width: 100%;
+    }
+
+
+    .main_slider .head
+    {
+        font-size: 15px;
+
+        gap: 16px;
+    }
+
+
+    .main_slider .head .sep
+    {
+        height: 16px;
+    }
+
+
+    .main_slider .head picture,
+    .main_slider .head picture img
+    {
+        height: 30px;
+    }
+
+
+    .main_slider .title br
+    {
+        display: none;
+    }
+
+
+    .main_slider .items,
+    .main_slider .data.big .items
+    {
+        font-size: var(--font_size);
+
+        width: calc(100% + 24px);
+        max-width: calc(100% + 24px);
+    }
+
+
+    .main_slider .link a
+    {
+        font-size: var(--font_size);
+        line-height: calc(100% + 4px);
+    }
+
+
+    .main_slider .message
+    {
+        width: calc(100% - 168px);
+        min-height: 0;
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding: 24px 48px 24px 24px;
+    }
+
+
+    .main_slider .message br
+    {
+        display: none;
+    }
+
+
+    .main_slider .swiper-button-next
+    {
+        width: 120px;
+        height: 74px;
+
+        border-width: 1px;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .logos
     {
         display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 24px -24px 0;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .clients .logos::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .clients .logos::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .clients .logos picture
+    {
+        display: inline-block;
+
+        max-width: none;
+        height: 68px;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+    .clients .logos picture + picture
+    {
+        margin-left: 36px;
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .cases .swiper-button-next,
+    .cases .swiper-button-prev
+    {
+        bottom: -64px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .articles .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .articles .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .articles .row > *,
+    .articles .row > *.big
+    {
+        display: inline-block;
+
+        width: 280px;
+        max-width: none;
+        min-height: 300px;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        border-radius: 20px;
+
+        scroll-snap-align: start;
+    }
+
+
+    .articles .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .articles .article
+    {
+        position: relative;
+
+        padding: 24px 24px 96px;
+    }
+
+
+    .articles .article .title
+    {
+        font-size: 18px;
+    }
+
+
+    .articles .article .arrow .icon
+    {
+        width: 68px;
+        height: 10px;
+    }
+
+
+    .articles .article .author
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+        padding: 24px;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .partners .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .partners .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .partners .row picture
+    {
+        display: inline-block;
+
+        max-width: none;
+        height: 52px;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+    .partners .row picture + picture
+    {
+        margin-left: 68px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .block_head
+    {
+        margin-bottom: 124px;
+    }
+
+
+    .contacts_info .image
+    {
+        top: -24px;
+
+        width: calc(100% - 240px);
+    }
+
+
+    .contacts_info .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+
+        gap: 0;
+    }
+
+
+    .contacts_info .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .contacts_info .item
+    {
+        font-size: 15px;
+    }
+
+
+    .contacts_info .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .contacts_info .item .address
+    {
+        margin-top: 20px;
+    }
+
+
+    .contacts_info .item .phone,
+    .contacts_info .item .email
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu
+    {
+        margin-left: auto;
     }
 }

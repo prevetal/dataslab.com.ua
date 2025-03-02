@@ -11,6 +11,7 @@
         --font_size_title_big: 48px;
     }
 
+
     html.custom_scroll ::-webkit-scrollbar
     {
         width: 5px;
@@ -64,9 +65,29 @@
 
 
 
+    header .contacts_link
+    {
+        margin-left: auto;
+    }
+
+
     header .contacts_link a
     {
         padding: 11px 23px;
+    }
+
+
+
+    header .langs
+    {
+        margin-left: auto;
+    }
+
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
     }
 
 

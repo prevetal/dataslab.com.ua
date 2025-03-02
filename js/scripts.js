@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
 			lazy: true
 		})
 	}
@@ -119,16 +125,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Mob. menu
-	$('.mob_header .mob_menu_btn').click((e) => {
+	$('.mob_menu_btn').click((e) => {
 		e.preventDefault()
 
-		$('.mob_header .mob_menu_btn').toggleClass('active')
+		$('.mob_menu_btn').toggleClass('active')
 		$('body').toggleClass('lock')
-		$('header').toggleClass('show')
-
-		$('.mob_header .mob_menu_btn').hasClass('active')
-			? $('.overlay').fadeIn(300)
-			: $('.overlay').fadeOut(300)
+		$('.mob_menu').toggleClass('show')
 	})
 
 
