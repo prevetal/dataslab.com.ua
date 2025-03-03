@@ -175,7 +175,29 @@
     }
 
 
-    .cases .case .image
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .filter
+    {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .cases .filter .nice-select .current,
+    .cases .filter .nice-select .list .option
+    {
+        font-size: 16px;
+    }
+
+
+
+    .cases .case .image,
+    .cases .list .case .image,
+    .cases .list .case .image.left
     {
         width: 180px;
         height: 160px;
@@ -228,5 +250,54 @@
     .contacts_info .item .address
     {
         margin-top: 16px;
+    }
+
+
+
+    /*---------------
+        Case info
+    ---------------*/
+    .case_info .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .case_info .head .desc
+    {
+        font-size: 14px;
+    }
+
+
+
+    .case_info .stats
+    {
+        gap: 16px;
+    }
+
+
+    .case_info .stats > *:not(.sep)
+    {
+        width: 100%;
+    }
+
+
+    .case_info .stats .sep
+    {
+        width: 100%;
+        height: 1px;
+    }
+
+
+    .case_info .stats .val
+    {
+        font-size: 22px;
+    }
+
+
+
+    .case_info .tags
+    {
+        gap: 8px;
     }
 }

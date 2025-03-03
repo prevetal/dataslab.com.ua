@@ -22,6 +22,13 @@
     /*------------
         Header
     ------------*/
+    header
+    {
+        margin-bottom: 40px;
+        padding: 20px 0;
+    }
+
+
     header .logo img
     {
         width: 145px;
@@ -191,6 +198,37 @@
     /*-----------
         Cases
     -----------*/
+    .cases .head .title
+    {
+        width: 100%;
+    }
+
+
+    .cases .head .title br
+    {
+        display: none;
+    }
+
+
+    .cases .head .title + *
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .cases .head .desc
+    {
+        font-size: 15px;
+    }
+
+
+    .cases .list
+    {
+        gap: 24px;
+    }
+
+
     .cases .case
     {
         padding: 32px 24px;
@@ -258,6 +296,18 @@
 
         width: 100%;
         min-width: 100%;
+
+        gap: 20px;
+    }
+
+
+    .cases .case .stats > *.mob_column
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 4px;
     }
 
 
@@ -265,9 +315,13 @@
     {
         line-height: 100%;
 
-        margin-right: 20px;
-
         white-space: nowrap;
+    }
+
+
+    .cases .case .stats > *.mob_column .val
+    {
+        font-size: 24px;
     }
 
 
@@ -331,6 +385,94 @@
     .contacts_info .row > *
     {
         width: calc(50% - 24px);
+    }
+
+
+
+    /*---------------
+        Case info
+    ---------------*/
+    .case_info .head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .case_info .head .desc
+    {
+        font-size: 15px;
+    }
+
+
+
+    .case_info .stats > *:not(.sep)
+    {
+        min-width: 0;
+    }
+
+
+    .case_info .stats .sep
+    {
+        height: 48px;
+    }
+
+
+    .case_info .stats .val
+    {
+        font-size: 24px;
+    }
+
+
+
+    .case_info .big_image
+    {
+        padding: 40px 24px;
+    }
+
+
+
+    .case_info .tags
+    {
+        gap: 10px;
+    }
+
+
+
+    .case_info .section .quote .icon
+    {
+        width: 68px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding: 32px 0;
+    }
+
+
+    .action_block .cont
+    {
+        gap: 20px 0;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 24px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .action_block .btn
+    {
+        font-size: 16px;
     }
 
 

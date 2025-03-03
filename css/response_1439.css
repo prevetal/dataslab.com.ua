@@ -37,6 +37,13 @@
     /*------------
         Header
     ------------*/
+    header
+    {
+        margin-bottom: 60px;
+        padding: 24px 0;
+    }
+
+
     header .logo img
     {
         width: 200px;
@@ -351,12 +358,51 @@
     }
 
 
+    .cases .head .title + *
+    {
+        width: calc(100% - 480px);
+    }
+
+
     .cases .head .desc
     {
         font-size: 20px;
         line-height: calc(100% + 12px);
 
         width: 600px;
+    }
+
+
+    .cases .filter
+    {
+        gap: 24px 100px;
+    }
+
+
+    .cases .filter .nice-select .current
+    {
+        font-size: 18px;
+        line-height: 48px;
+
+        height: 48px;
+    }
+
+
+    .cases .filter .nice-select-dropdown
+    {
+        left: -24px;
+
+        width: 225px;
+        min-width: calc(100% + 48px);
+        padding: 48px 24px 24px;
+    }
+
+
+    .cases .filter .nice-select .list .option
+    {
+        font-size: 18px;
+
+        padding: 12px 0;
     }
 
 
@@ -475,6 +521,32 @@
     .cases .list
     {
         gap: 48px;
+    }
+
+
+    .cases .list .case .info
+    {
+        width: calc(100% - 360px);
+    }
+
+
+    .cases .list .case .name
+    {
+        width: 624px;
+    }
+
+
+    .cases .list .case .industry
+    {
+        margin-top: 40px;
+    }
+
+
+    .cases .list .case .image,
+    .cases .list .case .image.left
+    {
+        width: 320px;
+        height: 280px;
     }
 
 
@@ -647,6 +719,116 @@
     .contacts_info .item .email
     {
         font-size: 20px;
+    }
+
+
+
+    /*---------------
+        Case info
+    ---------------*/
+    .case_info .head .title
+    {
+        line-height: calc(100% + 10px);
+    }
+
+
+    .case_info .head .title + *
+    {
+        width: calc(100% - 584px);
+    }
+
+
+    .case_info .head .desc
+    {
+        font-size: 20px;
+        line-height: calc(100% + 12px);
+
+        width: 100%;
+    }
+
+
+    .case_info .stats .sep
+    {
+        height: 56px;
+    }
+
+
+    .case_info .stats .val
+    {
+        font-size: 30px;
+        line-height: 100%;
+
+        margin-bottom: 8px;
+    }
+
+
+
+    .case_info .section .info
+    {
+        width: calc(100% - 380px);
+    }
+
+
+    .case_info .section .info.middle
+    {
+        width: calc(100% - 540px);
+    }
+
+
+    .case_info .section .info .desc
+    {
+        line-height: calc(100% + 12px);
+    }
+
+
+    .case_info .section .quote
+    {
+        width: 400px;
+    }
+
+
+    .case_info .section .quote .icon
+    {
+        width: 100px;
+    }
+
+
+    .case_info .section .image
+    {
+        width: 320px;
+        height: 288px;
+    }
+
+
+    .case_info .section .default_image
+    {
+        width: 480px;
+        margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .cont
+    {
+        gap: 24px 80px;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 30px;
+    }
+
+
+    .action_block .btn
+    {
+        font-size: 19px;
+
+        height: 56px;
+        padding: 0 40px;
     }
 
 

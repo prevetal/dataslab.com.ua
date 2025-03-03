@@ -36,6 +36,24 @@
     }
 
 
+    header .contacts_link
+    {
+        margin-left: auto;
+    }
+
+
+    header .langs
+    {
+        margin-left: auto;
+    }
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
 
     /*----------------
         Block head
@@ -198,6 +216,21 @@
     /*-----------
         Cases
     -----------*/
+    .cases .head .title + *
+    {
+        width: calc(100% - 320px);
+
+        gap: 24px;
+    }
+
+
+    .cases .head .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 8px);
+    }
+
+
     .cases .block_head .title br
     {
         display: none;
@@ -208,6 +241,26 @@
     .cases .swiper-button-prev
     {
         bottom: -64px;
+    }
+
+
+    .cases .list .case .image
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .cases .list .case .info
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .cases .list .case .industry
+    {
+        margin-top: 24px;
     }
 
 
@@ -424,6 +477,144 @@
     .contacts_info .item .email
     {
         font-size: var(--font_size);
+    }
+
+
+
+    /*---------------
+        Case info
+    ---------------*/
+    .case_info .head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .case_info .head .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .case_info .stats
+    {
+        font-size: 14px;
+    }
+
+
+    .case_info .stats .sep
+    {
+        height: 52px;
+    }
+
+
+    .case_info .stats .val
+    {
+        font-size: 26px;
+    }
+
+
+    .case_info .tags
+    {
+        width: 100%;
+    }
+
+
+    .case_info .tags > *
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 10px 20px;
+    }
+
+
+    .case_info .section
+    {
+        margin-top: 40px;
+    }
+
+    .case_info .section + .section
+    {
+        padding-top: 40px;
+    }
+
+
+    .case_info .section .info,
+    .case_info .section .info.middle,
+    .case_info .section .info.small
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .case_info .section .quote + .info
+    {
+        margin-top: 0;
+    }
+
+
+
+    .case_info .section .quote
+    {
+        order: 3;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .case_info .section .quote .icon
+    {
+        width: 80px;
+    }
+
+
+    .case_info .section .image
+    {
+        width: 280px;
+        height: 252px;
+    }
+
+
+    .case_info .section .default_image
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding: 28px 0;
+    }
+
+
+    .action_block .cont
+    {
+        gap: 24px 48px;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 26px;
+    }
+
+
+    .action_block .btn
+    {
+        font-size: 17px;
+
+        height: 48px;
+        padding: 0 28px;
     }
 
 

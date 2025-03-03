@@ -1,9 +1,13 @@
 @media print,
 (max-width: 1899px)
 {
-    /*-------------------
-        Global styles
-    -------------------*/
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block > *
+    {
+        margin-bottom: 20px;
+    }
 
 
 
@@ -32,5 +36,94 @@
     {
         width: 100%;
         margin-top: 24px;
+    }
+
+
+
+    /*---------------
+        Case info
+    ---------------*/
+    .case_info .big_image
+    {
+        padding: 60px 24px;
+    }
+
+
+    .case_info .tags
+    {
+        width: 468px;
+    }
+
+
+    .case_info .section .info
+    {
+        width: calc(100% - 440px);
+    }
+
+    .case_info .section .info.small
+    {
+        width: 460px;
+        margin-left: 180px;
+    }
+
+
+    .case_info .section .info.middle
+    {
+        width: calc(100% - 608px);
+        margin-right: 0;
+    }
+
+
+    .case_info .section .info .title
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .case_info .section .info .desc
+    {
+        line-height: calc(100% + 14px);
+    }
+
+
+    .case_info .section .info.small .desc
+    {
+        line-height: calc(100% + 10px);
+    }
+
+
+    .case_info .section .quote
+    {
+        width: 424px;
+    }
+
+
+    .case_info .section .quote .text
+    {
+        line-height: calc(100% + 10px);
+    }
+
+
+    .case_info .section .image
+    {
+        width: 380px;
+        height: 336px;
+    }
+
+
+    .case_info .section .default_image
+    {
+        width: 548px;
+        margin-top: 48px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .title
+    {
+        font-size: 34px;
     }
 }

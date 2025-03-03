@@ -64,30 +64,9 @@
     }
 
 
-
-    header .contacts_link
-    {
-        margin-left: auto;
-    }
-
-
     header .contacts_link a
     {
         padding: 11px 23px;
-    }
-
-
-
-    header .langs
-    {
-        margin-left: auto;
-    }
-
-
-
-    header .mob_menu_btn
-    {
-        display: flex;
     }
 
 
@@ -254,10 +233,47 @@
     /*-----------
         Cases
     -----------*/
+    .cases .head .title + *
+    {
+        width: calc(100% - 400px);
+
+        gap: 32px;
+    }
+
+
     .cases .head .desc
     {
         font-size: 18px;
         line-height: calc(100% + 10px);
+    }
+
+
+    .cases .filter
+    {
+        gap: 24px 80px;
+    }
+
+
+    .cases .filter .nice-select .current
+    {
+        font-size: 17px;
+        line-height: 40px;
+
+        height: 40px;
+    }
+
+
+    .cases .filter .nice-select-dropdown
+    {
+        top: -4px;
+
+        width: 220px;
+    }
+
+
+    .cases .filter .nice-select .list .option
+    {
+        font-size: 17px;
     }
 
 
@@ -395,6 +411,32 @@
     }
 
 
+    .cases .list .case .info
+    {
+        width: calc(100% - 320px);
+    }
+
+
+    .cases .list .case .name
+    {
+        width: 600px;
+    }
+
+
+    .cases .list .case .tags
+    {
+        width: 100%;
+    }
+
+
+    .cases .list .case .image,
+    .cases .list .case .image.left
+    {
+        width: 280px;
+        height: 240px;
+    }
+
+
     .cases .mob_link
     {
         display: block;
@@ -517,6 +559,119 @@
     .contacts_info .item .email
     {
         font-size: 18px;
+    }
+
+
+
+    /*---------------
+        Case info
+    ---------------*/
+    .case_info .head .title
+    {
+        line-height: calc(100% + 8px);
+
+        width: 100%;
+    }
+
+
+    .case_info .head .title + *
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .case_info .head .desc
+    {
+        font-size: 18px;
+        line-height: calc(100% + 10px);
+    }
+
+
+
+    .case_info .big_image
+    {
+        padding: 48px 24px;
+    }
+
+
+
+    .case_info .section .info
+    {
+        width: calc(100% - 320px);
+    }
+
+    .case_info .section .info.middle
+    {
+        width: calc(100% - 480px);
+    }
+
+    .case_info .section .info.small
+    {
+        width: calc(100% - 528px);
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+    .case_info .section .info .desc
+    {
+        line-height: calc(100% + 10px);
+    }
+
+    .case_info .section .info.small .desc
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .case_info .section .quote .icon
+    {
+        width: 88px;
+    }
+
+
+    .case_info .section .image
+    {
+        width: 280px;
+        height: 252px;
+    }
+
+
+    .case_info .section .default_image
+    {
+        width: 440px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding: 32px 0;
+    }
+
+
+    .action_block .cont
+    {
+        gap: 24px 68px;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 28px;
+    }
+
+
+    .action_block .btn
+    {
+        font-size: 18px;
+
+        height: 52px;
+        padding: 0 32px;
     }
 
 
