@@ -126,4 +126,163 @@
     {
         font-size: 34px;
     }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head
+    {
+        padding: 100px 0;
+    }
+
+
+    .about_head .data
+    {
+        width: 612px;
+        margin-bottom: 0;
+    }
+
+
+    .about_head .title
+    {
+        font-size: 56px;
+        line-height: calc(100% + 8px);
+    }
+
+
+    .about_head .desc
+    {
+        font-size: 22px;
+        line-height: calc(100% + 14px);
+
+        margin-top: 24px;
+    }
+
+
+    .about_head .exp
+    {
+        font-size: 18px;
+        line-height: calc(100% + 12px);
+
+        width: 400px;
+        padding: 44px 80px 44px 44px;
+    }
+
+
+
+    /*----------------
+        About data
+    ----------------*/
+    .about_data
+    {
+        padding-top: 120px;
+    }
+
+
+    .about_data .image
+    {
+        width: 420px;
+    }
+
+
+    .about_data .data
+    {
+        width: 448px;
+        margin-top: -280px;
+
+        gap: 40px;
+    }
+
+
+    .about_data .data .exp
+    {
+        font-size: 18px;
+        line-height: calc(100% + 12px);
+
+        width: 400px;
+        min-height: 280px;
+        padding: 40px 80px 40px 40px;
+    }
+
+
+    .about_data .stats
+    {
+        width: 360px;
+        margin-top: 48px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .col + .col
+    {
+        margin-left: 48px;
+        padding-left: 48px;
+    }
+
+
+    .why_we .col .title
+    {
+        font-size: 28px;
+    }
+
+
+    .why_we .col .stats .desc
+    {
+        font-size: 18px;
+        line-height: calc(100% + 12px);
+
+        margin-top: 4px;
+    }
+
+
+    .why_we .col .items
+    {
+        font-size: 18px;
+    }
+
+
+    .why_we .col .desc
+    {
+        font-size: 18px;
+        line-height: calc(100% + 12px);
+
+        margin-top: 20px;
+    }
+
+
+    .why_we .col .logos
+    {
+        margin-top: 44px;
+
+        gap: 40px;
+    }
+
+
+    .why_we .col .logos .all_link
+    {
+        font-size: 18px;
+
+        margin-top: -12px;
+    }
+
+
+
+    /*------------------------
+        Service industries
+    ------------------------*/
+    .service_industries .industry
+    {
+        padding: 48px;
+    }
+
+
+    .service_industries .action
+    {
+        padding: 48px;
+    }
 }

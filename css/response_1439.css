@@ -129,6 +129,25 @@
 
 
 
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block ul.columns > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 9px;
+
+        width: 6px;
+        height: 6px;
+    }
+
+
+
     /*-----------------
         Main slider
     -----------------*/
@@ -656,6 +675,19 @@
     }
 
 
+    .partners picture
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 200px;
+        height: 72px;
+    }
+
+
 
     /*-------------------
         Contacts info
@@ -829,6 +861,364 @@
 
         height: 56px;
         padding: 0 40px;
+    }
+
+
+
+    /*---------------
+        Service info
+    ---------------*/
+    .service_info .head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .service_info .head .title
+    {
+        line-height: calc(100% + 12px);
+
+        width: 480px;
+    }
+
+
+    .service_info .head .title + *
+    {
+        width: calc(100% - 540px);
+
+        gap: 40px;
+    }
+
+
+    .service_info .head .desc
+    {
+        font-size: 20px;
+        line-height: calc(100% + 14px);
+
+        width: 100%;
+    }
+
+
+    .service_info .stats
+    {
+        gap: 80px;
+    }
+
+
+    .service_info .stats .val
+    {
+        font-size: 40px;
+    }
+
+
+
+    /*------------------------
+        Service industries
+    ------------------------*/
+    .service_industries .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .service_industries .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .service_industries .industry
+    {
+        padding: 40px;
+    }
+
+
+    .service_industries .industry .thumb
+    {
+        width: 132px;
+        height: 116px;
+    }
+
+
+    .service_industries .industry .name
+    {
+        font-size: 24px;
+        line-height: calc(100% + 10px);
+
+        min-height: 68px;
+    }
+
+
+    .service_industries .industry .name br
+    {
+        display: none;
+    }
+
+
+    .service_industries .industry .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 10px);
+
+        margin-top: 12px;
+    }
+
+
+
+    .service_industries .action
+    {
+        font-size: 30px;
+
+        padding: 48px;
+
+        border-radius: 20px 20px 200px;
+    }
+
+
+    .service_industries .action .btn
+    {
+        font-size: 18px;
+
+        height: 56px;
+        margin-top: 32px;
+        padding: 0 40px;
+    }
+
+
+
+    /*------------------
+        Service data
+    ------------------*/
+    .service_data .expertise
+    {
+        width: 480px;
+    }
+
+
+    .service_data .expertise .items
+    {
+        font-size: 17px;
+
+        gap: 40px;
+    }
+
+
+    .service_data .expertise .col > *:before
+    {
+        top: 8px;
+
+        width: 6px;
+        height: 6px;
+    }
+
+
+
+    .service_data .team
+    {
+        width: calc(100% - 540px);
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head
+    {
+        padding: 80px 0;
+    }
+
+
+    .about_head .data
+    {
+        width: 560px;
+    }
+
+
+    .about_head .title
+    {
+        font-size: 52px;
+    }
+
+
+    .about_head .desc
+    {
+        font-size: 20px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .about_head .message
+    {
+        font-size: 18px;
+        line-height: calc(100% + 16px);
+
+        margin-top: 28px;
+        padding-left: 24px;
+    }
+
+
+    .about_head .exp
+    {
+        font-size: 17px;
+        line-height: calc(100% + 10px);
+
+        width: 368px;
+        padding: 40px 68px 40px 40px;
+    }
+
+
+
+    /*----------------
+        About data
+    ----------------*/
+    .about_data
+    {
+        margin-bottom: 60px;
+        padding-top: 100px;
+    }
+
+
+    .about_data .image
+    {
+        width: 400px;
+    }
+
+
+    .about_data .data
+    {
+        width: 360px;
+        margin-top: -200px;
+
+        gap: 28px;
+    }
+
+
+    .about_data .data .exp
+    {
+        font-size: 17px;
+        line-height: calc(100% + 10px);
+
+        width: 324px;
+        min-height: 280px;
+        padding: 40px 80px 24px 28px;
+    }
+
+
+    .about_data .data .desc
+    {
+        font-size: 18px;
+        line-height: calc(100% + 10px);
+    }
+
+
+    .about_data .stats
+    {
+        width: 272px;
+        margin-top: 68px;
+    }
+
+
+    .about_data .stats .val
+    {
+        font-size: 30px;
+    }
+
+
+    .about_data .stats .desc
+    {
+        font-size: 18px;
+        line-height: calc(100% + 10px);
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .row
+    {
+        padding: 0;
+    }
+
+
+    .why_we .col
+    {
+        padding-bottom: 0;
+    }
+
+
+    .why_we .col + .col
+    {
+        margin-left: 40px;
+        padding-left: 40px;
+    }
+
+
+    .why_we .col .title
+    {
+        font-size: 24px;
+    }
+
+
+    .why_we .col .stats .val
+    {
+        font-size: 30px;
+    }
+
+
+    .why_we .col .stats .desc
+    {
+        line-height: calc(100% + 10px);
+    }
+
+
+    .why_we .col .items
+    {
+        font-size: 17px;
+
+        gap: 12px;
+    }
+
+
+    .why_we .col .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 10px);
+
+        margin-top: 16px;
+    }
+
+
+    .why_we .col .logos
+    {
+        margin-top: 40px;
+
+        gap: 32px;
+    }
+
+
+    .why_we .col .logos picture
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 148px;
+        height: 52px;
+    }
+
+
+    .why_we .col .logos .all_link
+    {
+        font-size: 17px;
+
+        margin-top: 0;
     }
 
 

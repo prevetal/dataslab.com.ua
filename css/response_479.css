@@ -69,6 +69,23 @@
 
 
 
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block ul.columns
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+    .text_block ul.columns > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+
     /*-----------------
         Main slider
     -----------------*/
@@ -299,5 +316,92 @@
     .case_info .tags
     {
         gap: 8px;
+    }
+
+
+
+    /*---------------
+        Service info
+    ---------------*/
+    .service_info .head .desc
+    {
+        font-size: 14px;
+    }
+
+
+    .service_info .stats .val
+    {
+        font-size: 26px;
+    }
+
+
+
+    /*------------------------
+        Service industries
+    ------------------------*/
+    .service_industries .industry .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    .service_industries .action
+    {
+        font-size: 22px;
+    }
+
+
+    .service_industries .action .btn
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*------------------
+        Service data
+    ------------------*/
+    .service_data .expertise .items
+    {
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+
+    .service_data .expertise .col
+    {
+        width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+
+        gap: 12px;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .row picture
+    {
+        max-width: 180px;
+        height: 60px;
+    }
+
+
+    .partners .row picture + picture
+    {
+        margin-left: 44px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .col .logos
+    {
+        gap: 24px 40px;
     }
 }
