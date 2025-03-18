@@ -937,6 +937,31 @@
 
 
 
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .article_info .head .data
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 28px;
+    }
+
+
+    .article_info .image
+    {
+        width: 285px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

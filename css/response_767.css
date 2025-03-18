@@ -683,6 +683,22 @@
 
 
 
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        padding: 24px;
+    }
+
+
+    .article_info .image
+    {
+        width: 240px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

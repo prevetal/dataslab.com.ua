@@ -3650,6 +3650,79 @@ header .mob_menu_btn.active span:after
 
 
 
+/*------------------
+    Article info
+------------------*/
+.article_info .head
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+    padding: 40px 65px 38px;
+
+    border-radius: 20px;
+    background: #edf7f9;
+}
+
+
+.article_info .head .data
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 350px);
+}
+
+
+.article_info .head .date
+{
+    margin-bottom: 24px;
+
+    color: #a8a8ab;
+}
+
+
+.article_info .head .title
+{
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    line-height: 130%;
+
+    display: block;
+}
+
+
+.article_info .image
+{
+    width: 285px;
+    max-width: 100%;
+
+    border-radius: 30px 900px 30px 30px;
+}
+
+
+.article_info .image img
+{
+    display: block;
+
+    width: 100%;
+
+    border-radius: inherit;
+}
+
+
+.article_info .text_block
+{
+    width: calc(100% - 415px);
+    padding-left: 65px;
+}
+
+
+
 /*------------
     Footer
 ------------*/

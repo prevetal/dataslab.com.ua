@@ -1040,6 +1040,36 @@
 
 
 
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        margin-bottom: 48px;
+        padding: 40px;
+    }
+
+
+    .article_info .head .data
+    {
+        width: calc(100% - 300px);
+    }
+
+
+    .article_info .image
+    {
+        width: 260px;
+    }
+
+
+    .article_info .text_block
+    {
+        width: 100%;
+        padding-left: 0;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
