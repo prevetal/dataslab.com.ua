@@ -64,7 +64,8 @@
     }
 
 
-    header .contacts_link a
+
+    header .contacts_btn
     {
         padding: 11px 23px;
     }
@@ -89,7 +90,7 @@
     }
 
 
-    .block_head .link a
+    .block_head .link .btn
     {
         font-size: 17px;
         line-height: 21px;
@@ -110,6 +111,40 @@
     {
         width: 5px;
         height: 5px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .row
+    {
+        padding-top: 16px;
+    }
+
+
+    .form .input
+    {
+        font-size: 16px;
+
+        height: 52px;
+    }
+
+
+    .form textarea
+    {
+        font-size: 16px;
+
+        height: 92px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 16px;
+
+        height: 52px;
     }
 
 
@@ -1093,5 +1128,15 @@
         margin-left: 124px;
 
         gap: 40px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 680px;
     }
 }

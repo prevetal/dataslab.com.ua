@@ -34,6 +34,7 @@
 		<!-- Connecting style files -->
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)">
@@ -67,9 +68,7 @@
 							</div>
 						</nav>
 
-						<div class="contacts_link">
-							<a href="/">Зв'язатися з нами</a>
-						</div>
+						<button class="contacts_btn modal_btn" data-modal="contacts_modal">Зв'язатися з нами</button>
 
 						<div class="langs modal_cont">
 							<button class="btn mini_modal_btn" data-modal-id="#langs_modal">
@@ -126,9 +125,7 @@
 							</div>
 						</div>
 
-						<div class="contacts_link">
-							<a href="/">Зв'язатися з нами</a>
-						</div>
+						<button class="contacts_btn modal_btn" data-modal="contacts_modal">Зв'язатися з нами</button>
 					</div>
 				</section>
 
@@ -189,7 +186,7 @@
 					<div class="cont row">
 						<div class="title">Що ми можемо зробити<br> для вашого бізнесу?</div>
 
-						<button class="btn">Зв'язатися з нами</button>
+						<button class="btn modal_btn" data-modal="contacts_modal">Зв'язатися з нами</button>
 					</div>
 				</section>
 
@@ -280,11 +277,71 @@
 		</div>
 
 
+		<section class="modal" id="contacts_modal">
+			<div class="modal_title">Зв'язатися з нами</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Ім'я">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="E-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input" placeholder="Телефон">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Компанія">
+						</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Повідомлення"></textarea>
+					</div>
+				</div>
+
+				<div class="line row">
+					<div class="agree">
+						<label class="checkbox">
+							<input type="checkbox" name="agree">
+
+							<div class="check"></div>
+
+							<div>Я даю згоду на обробку даних відповідно до умов <a href="/" target="_blank">приватної політики</a></div>
+						</label>
+					</div>
+
+					<div class="captcha">
+						<img src="images/tmp/captcha_img.png" alt="" loading="lazy">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">НАДІСЛАТИ</button>
+				</div>
+			</form>
+		</section>
+
+
 		<!-- Connecting javascript files -->
 		<script src="js/jquery-3.6.3.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/nice-select2.js"></script>
+		<script src="js/fancybox.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

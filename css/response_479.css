@@ -86,6 +86,16 @@
 
 
 
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
     /*-----------------
         Main slider
     -----------------*/
@@ -403,5 +413,21 @@
     .why_we .col .logos
     {
         gap: 24px 40px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 32px 24px 24px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 20px;
     }
 }
