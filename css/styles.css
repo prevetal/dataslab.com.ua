@@ -2005,6 +2005,20 @@ header .mob_menu_btn.active span:after
 }
 
 
+.cases .swiper-fade .swiper-slide
+{
+    z-index: 1;
+
+    pointer-events: auto;
+}
+
+
+.cases .swiper-fade .swiper-slide.active
+{
+    z-index: 3;
+}
+
+
 .cases .case
 {
     position: relative;
@@ -2017,6 +2031,9 @@ header .mob_menu_btn.active span:after
 
     padding: 67px 61px 68px 80px;
 
+    text-decoration: none;
+
+    color: currentColor;
     border-radius: 20px;
     background: #edf7f9;
 }
