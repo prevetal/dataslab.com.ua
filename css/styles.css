@@ -2099,8 +2099,13 @@ header .mob_menu_btn.active span:after
     font-weight: 600;
     line-height: calc(100% + 14px);
 
+    display: inline-block;
+
     width: 324px;
     max-width: 100%;
+
+    vertical-align: top;
+    text-decoration: none;
 
     color: #060606;
 }
