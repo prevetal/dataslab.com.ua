@@ -325,6 +325,39 @@ button
 
 
 
+/*----------
+    Tabs
+----------*/
+.tab_content
+{
+    position: relative;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 0;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.tab_content.active
+{
+    visibility: visible;
+    overflow: visible;
+
+    height: auto;
+
+    transition: opacity .5s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+
 /*------------
     Header
 ------------*/
@@ -3754,6 +3787,354 @@ header .mob_menu_btn.active span:after
 {
     width: calc(100% - 415px);
     padding-left: 65px;
+}
+
+
+
+/*-------------------
+    Services head
+-------------------*/
+.services_head .section + .section
+{
+    margin-top: 80px;
+}
+
+
+.services_head .image
+{
+    display: block;
+
+    width: 445px;
+    max-width: 100%;
+
+    border-radius: 30px 900px 30px 30px;
+}
+
+
+.services_head .image img
+{
+    display: block;
+
+    width: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.services_head .info
+{
+    align-self: center;
+
+    width: calc(100% - 525px);
+    margin-left: auto;
+}
+
+
+.services_head .block_head
+{
+    margin-bottom: 28px;
+}
+
+
+.services_head .items
+{
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: -30px;
+    margin-left: -30px;
+
+    counter-reset: number;
+}
+
+
+.services_head .item
+{
+    position: relative;
+
+    width: calc(33.333% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 24px;
+
+    border: 1px solid #a9ca4b;
+    border-radius: 20px;
+}
+
+
+.services_head .item:nth-child(1)
+{
+    padding: 64px 24px 137px 25px;
+}
+
+
+.services_head .item:nth-child(2)
+{
+    padding: 98px 24px 82px 25px;
+}
+
+
+.services_head .item:nth-child(3)
+{
+    padding: 146px 65px 90px 25px;
+
+    color: #fff;
+    border: none;
+    border-radius: 23px 690px 690px 23px;
+    background: #39439e;
+}
+
+
+.services_head .item .number
+{
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    line-height: 130%;
+
+    position: absolute;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 102px;
+    height: 90px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 50px 50px 50px 7px;
+    background-color: #39439e;
+}
+
+
+.services_head .item .number span:before
+{
+    content: counter(number);
+    counter-increment: number;
+}
+
+
+.services_head .item:nth-child(1) .number
+{
+    bottom: 13px;
+    left: 24px;
+}
+
+
+.services_head .item:nth-child(2) .number
+{
+    top: -41px;
+    left: 27px;
+}
+
+
+.services_head .item:nth-child(3) .number
+{
+    top: 2px;
+    left: 25px;
+
+    width: 135px;
+    height: 119px;
+
+    border-radius: 0;
+}
+
+
+.services_head .item .number span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
+.services_head .item .number picture,
+.services_head .item .number img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+
+/*------------------
+    Our services
+------------------*/
+.our_services .tabs
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 54px;
+
+    border-top: 1px solid #39439e;
+    border-bottom: 1px solid #39439e;
+
+    gap: 30px;
+}
+
+
+.our_services .tabs .btn
+{
+    font-size: 24px;
+    font-weight: 700;
+
+    position: relative;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 100%;
+    padding: 37px 0;
+
+    transition: color .2s linear;
+    text-align: left;
+}
+
+
+.our_services .tabs .btn:after
+{
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+
+    width: 0;
+    height: 4px;
+    margin: auto;
+
+    content: '';
+    transition: width .3s linear;
+
+    background: #39439e;
+}
+
+
+.our_services .tabs .btn:hover,
+.our_services .tabs .btn.active
+{
+    color: #39439e;
+}
+
+
+.our_services .tabs .btn.active:after
+{
+    width: 100%;
+}
+
+
+.our_services .image
+{
+    width: 445px;
+    max-width: 100%;
+    margin-left: auto;
+
+    border-radius: 30px 900px 30px 30px;
+}
+
+
+.our_services .image img
+{
+    display: block;
+
+    width: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.our_services .data
+{
+    align-self: center;
+
+    width: calc(100% - 552px);
+}
+
+
+.our_services .data > * + *
+{
+    margin-top: 20px;
+}
+
+
+
+/*-------------
+    Why we2
+-------------*/
+.why_we2 .row
+{
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+.why_we2 .block_head
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 445px;
+    max-width: 100%;
+    margin-bottom: 0;
+    padding: 64px 68px 64px 48px;
+
+    border: 1px solid #a9ca4b;
+    border-radius: 23px 690px 690px 23px;
+}
+
+
+.why_we2 .data
+{
+    width: calc(100% - 475px);
+    padding: 78px 95px;
+
+    border-radius: 20px;
+    background: #edf7f9;
+}
+
+
+.why_we2 .data .name
+{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.why_we2 .data .desc
+{
+    margin-top: 20px;
 }
 
 

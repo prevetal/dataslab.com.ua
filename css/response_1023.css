@@ -962,6 +962,99 @@
 
 
 
+    /*-------------------
+        Services head
+    -------------------*/
+    .services_head .image
+    {
+        width: 300px;
+    }
+
+
+    .services_head .info
+    {
+        width: calc(100% - 324px);
+    }
+
+
+    .services_head .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .services_head .section + .section
+    {
+        margin-top: 60px;
+    }
+
+
+    .services_head .item
+    {
+        width: calc(50% - 24px);
+        padding: 27px;
+    }
+
+
+    .services_head .item:nth-child(3)
+    {
+        width: calc(100% - 24px);
+        padding: 120px 56px 28px 28px;
+
+        border-radius: 20px 190px 190px 20px;
+    }
+
+
+    .services_head .item:nth-child(2)
+    {
+        padding-bottom: 27px;
+    }
+
+
+
+    /*------------------
+        Our services
+    ------------------*/
+    .our_services .tabs .btn
+    {
+        font-size: 18px;
+    }
+
+
+    .our_services .image
+    {
+        width: 300px;
+        min-height: 0;
+        margin-left: 0;
+    }
+
+
+    .our_services .data
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------
+        Why we2
+    -------------*/
+    .why_we2 .block_head
+    {
+        width: 300px;
+    }
+
+
+    .why_we2 .data
+    {
+        width: calc(100% - 324px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -752,6 +752,126 @@
 
 
 
+    /*-------------------
+        Services head
+    -------------------*/
+    .services_head .section + .section
+    {
+        margin-top: 40px;
+    }
+
+
+    .services_head .image
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .services_head .info
+    {
+        width: 100%;
+    }
+
+
+
+    .services_head .items
+    {
+        margin-left: 0;
+
+        gap: 0;
+    }
+
+
+    .services_head .item
+    {
+        width: 100%;
+        margin-left: 0;
+        padding: 23px;
+    }
+
+
+    .services_head .item:nth-child(3)
+    {
+        width: 100%;
+        padding: 120px 48px 24px 24px;
+    }
+
+
+    .services_head .item:nth-child(2)
+    {
+        margin-top: 36px;
+        padding-top: 63px;
+        padding-bottom: 23px;
+    }
+
+
+    .services_head .item:nth-child(1)
+    {
+        margin-top: 36px;
+        padding-top: 63px;
+        padding-bottom: 23px;
+    }
+
+
+    .services_head .item:nth-child(1) .number
+    {
+        top: -37px;
+        bottom: auto;
+        left: 24px;
+    }
+
+
+
+    /*------------------
+        Our services
+    ------------------*/
+    .our_services .tabs
+    {
+        flex-wrap: wrap;
+
+        padding: 23px 0;
+    }
+
+
+    .our_services .tabs .btn
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .our_services .tabs .btn br
+    {
+        display: none;
+    }
+
+
+    .our_services .tabs .btn:after
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Why we2
+    -------------*/
+    .why_we2 .block_head
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 23px 51px 23px 23px;
+    }
+
+
+    .why_we2 .data
+    {
+        width: 100%;
+        padding: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
