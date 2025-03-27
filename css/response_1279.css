@@ -1105,6 +1105,146 @@
 
 
 
+    /*-------------------
+        Services head
+    -------------------*/
+    .services_head .section + .section
+    {
+        margin-top: 68px;
+    }
+
+
+
+    .services_head .image
+    {
+        width: 360px;
+    }
+
+
+    .services_head .info
+    {
+        width: calc(100% - 408px);
+    }
+
+
+
+    .services_head .items
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .services_head .item
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+        padding: 31px 23px;
+    }
+
+
+    .services_head .item:nth-child(1)
+    {
+        padding: 31px 23px 119px;
+    }
+
+    .services_head .item:nth-child(2)
+    {
+        padding-top: 67px;
+        padding-bottom: 47px;
+    }
+
+    .services_head .item:nth-child(3)
+    {
+        padding: 124px 48px 24px 24px;
+    }
+
+
+    .services_head .item .number
+    {
+        width: 92px;
+        height: 80px;
+    }
+
+
+    .services_head .item:nth-child(1) .number
+    {
+        bottom: 16px;
+        left: 24px;
+    }
+
+    .services_head .item:nth-child(2) .number
+    {
+        top: -37px;
+        left: 24px;
+    }
+
+    .services_head .item:nth-child(3) .number
+    {
+        top: 6px;
+        left: 24px;
+
+        width: 120px;
+        height: 108px;
+    }
+
+
+
+    /*------------------
+        Our services
+    ------------------*/
+    .our_services .tabs .btn
+    {
+        font-size: 20px;
+
+        padding: 23px 0;
+    }
+
+
+    .our_services .image
+    {
+        width: 360px;
+    }
+
+
+    .our_services .data
+    {
+        width: calc(100% - 408px);
+    }
+
+
+
+    /*-------------
+        Why we2
+    -------------*/
+    .why_we2 .block_head
+    {
+        width: 360px;
+        padding: 39px;
+    }
+
+
+    .services_head .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .why_we2 .data
+    {
+        width: calc(100% - 408px);
+        padding: 40px;
+    }
+
+
+    .why_we2 .data .name
+    {
+        font-size: 20px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

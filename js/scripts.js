@@ -92,6 +92,42 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	// Tabs slider
+	const tabsSliders = [],
+		tabsSlider = document.querySelectorAll('.swiper.tabs')
+
+	tabsSlider.forEach((el, i) => {
+		el.classList.add('tabs_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			loopAdditionalSlides: 1,
+			slidesPerView: 'auto',
+			breakpoints: {
+				0: {
+					spaceBetween: 48
+				},
+				768: {
+					spaceBetween: 60
+				},
+				1024: {
+					spaceBetween: 80
+				},
+				1280: {
+					spaceBetween: 120
+				}
+			}
+		}
+
+		tabsSliders.push(new Swiper('.tabs_s' + i, options))
+	})
+
+
 	// Mini popups
 	$('.mini_modal_btn').click(function(e) {
 		e.preventDefault()
@@ -205,6 +241,42 @@ document.addEventListener('DOMContentLoaded', function() {
 				BODY.style = 'cursor: default;'
 			}
 		})
+	}
+
+
+	// Tabs
+	var locationHash = window.location.hash
+
+	$('body').on('click', '.tabs .btn', function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			let parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				activeTabContent = $(activeTab),
+				level = $(this).data('level')
+
+			parent.find('.tabs:first .btn').removeClass('active')
+			parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		let activeTab = $(`.tabs button[data-content="${locationHash}"]`),
+			activeTabContent = $(locationHash),
+			parent = activeTab.closest('.tabs_container'),
+			level = activeTab.data('level')
+
+		parent.find('.tabs:first .btn').removeClass('active')
+		parent.find('.tab_content.' + level).removeClass('active')
+
+		activeTab.addClass('active')
+		activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
 })
 
