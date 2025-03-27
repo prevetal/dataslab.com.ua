@@ -552,18 +552,18 @@
     }
 
 
-    .cases .case .stats > *:not(.sep)
-    {
-        min-width: 200px;
-    }
-
-
     .cases .case .stats .val
     {
         font-size: 28px;
         line-height: 40px;
 
         margin-bottom: 0;
+    }
+
+
+    .cases .case .stats .val + *
+    {
+        max-width: 240px;
     }
 
 
