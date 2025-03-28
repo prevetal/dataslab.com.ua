@@ -278,6 +278,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
+
+
+	// Why we - Logos
+	whyWeLogos()
+
+	$('.why_we .col .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+
+		$('.why_we .col .logos_wrap').toggleClass('full')
+	})
 })
 
 
@@ -290,6 +302,10 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
+
+
+		// Why we - Logos
+		whyWeLogos()
 
 
 		// Mob. version
@@ -310,3 +326,18 @@ window.addEventListener('resize', function () {
 		}
 	}
 })
+
+
+
+// Why we - Logos
+function whyWeLogos() {
+	let logosWrapH = $('.why_we .col .logos_wrap').outerHeight(),
+		logosH = $('.why_we .col .logos').outerHeight()
+
+		console.log(logosWrapH)
+		console.log(logosH)
+
+	logosWrapH < logosH
+		? $('.why_we .col .spoler_btn').addClass('show')
+		: $('.why_we .col .spoler_btn').removeClass('show')
+}

@@ -255,19 +255,21 @@
     }
 
 
-    .why_we .col .logos
+    .why_we .col .logos_wrap
     {
         margin-top: 44px;
-
-        gap: 40px;
     }
 
 
-    .why_we .col .logos .all_link
+    .why_we .col .logos
+    {
+        gap: 40px 36px;
+    }
+
+
+    .why_we .col .spoler_btn
     {
         font-size: 18px;
-
-        margin-top: -12px;
     }
 
 

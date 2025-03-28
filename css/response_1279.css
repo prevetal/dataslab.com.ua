@@ -1072,6 +1072,13 @@
     }
 
 
+    .why_we .col .logos_wrap
+    {
+        height: 120px;
+    }
+
+
+
     .why_we .col .logos
     {
         gap: 24px;
@@ -1080,22 +1087,22 @@
 
     .why_we .col .logos picture
     {
-        display: flex;
-        align-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-
         max-width: 120px;
         height: 48px;
     }
 
 
-    .why_we .col .logos .all_link
+    .why_we .col .logos picture img
+    {
+        height: auto;
+    }
+
+
+    .why_we .col .spoler_btn
     {
         font-size: 16px;
 
-        margin-top: 4px;
+        margin-top: 20px;
     }
 
 

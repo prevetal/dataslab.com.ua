@@ -3681,6 +3681,23 @@ header .mob_menu_btn.active span:after
 }
 
 
+.why_we .col .logos_wrap
+{
+    overflow: hidden;
+
+    height: 160px;
+    margin-top: 48px;
+
+    transition: height .2s linear;
+}
+
+
+.why_we .col .logos_wrap.full
+{
+    height: auto;
+}
+
+
 .why_we .col .logos
 {
     display: flex;
@@ -3689,15 +3706,19 @@ header .mob_menu_btn.active span:after
     flex-wrap: wrap;
     justify-content: space-between;
 
-    margin-top: 48px;
-
     gap: 40px 48px;
 }
 
 
 .why_we .col .logos picture
 {
-    display: block;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 60px;
 }
 
 
@@ -3710,29 +3731,36 @@ header .mob_menu_btn.active span:after
 }
 
 
-.why_we .col .logos .all_link
+.why_we .col .spoler_btn
 {
     font-size: 20px;
     font-weight: 600;
 
-    width: 100%;
-    margin-top: -16px;
+    display: none;
 
-    text-align: center;
+    margin: 24px auto 0;
 
     color: #39439e;
+    border-bottom: 1px solid;
 }
 
 
-.why_we .col .logos .all_link a
+.why_we .col .spoler_btn.show
 {
-    display: inline-block;
+    display: block;
+}
 
-    vertical-align: top;
-    text-decoration: none;
 
-    color: currentColor;
-    border-bottom: 1px solid;
+.why_we .col .spoler_btn span + span,
+.why_we .col .spoler_btn.active span
+{
+    display: none;
+}
+
+
+.why_we .col .spoler_btn.active span + span
+{
+    display: block;
 }
 
 

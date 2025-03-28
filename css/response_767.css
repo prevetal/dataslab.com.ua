@@ -732,11 +732,17 @@
     }
 
 
+    .why_we .col .logos_wrap
+    {
+        height: 120px;
+    }
+
+
     .why_we .col .logos
     {
         justify-content: center;
 
-        gap: 24px 32px;
+        gap: 24px 36px;
     }
 
 

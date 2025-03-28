@@ -933,6 +933,12 @@
     }
 
 
+    .why_we .col .logos_wrap
+    {
+        height: 52px;
+    }
+
+
     .why_we .col .logos picture
     {
         max-width: 128px;
@@ -940,12 +946,9 @@
     }
 
 
-    .why_we .col .logos .all_link
+    .why_we .col .spoler_btn
     {
         font-size: 15px;
-
-        height: calc(100% - 8px);
-        margin-top: 0;
     }
 
 

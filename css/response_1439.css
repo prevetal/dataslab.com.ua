@@ -1250,32 +1250,29 @@
     }
 
 
+    .why_we .col .logos_wrap
+    {
+        height: 144px;
+        margin-top: 40px;
+    }
+
+
     .why_we .col .logos
     {
-        margin-top: 40px;
-
         gap: 32px;
     }
 
 
     .why_we .col .logos picture
     {
-        display: flex;
-        align-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-
         max-width: 148px;
-        height: 52px;
+        height: 56px;
     }
 
 
-    .why_we .col .logos .all_link
+    .why_we .col .spoler_btn
     {
         font-size: 17px;
-
-        margin-top: 0;
     }
 
 
