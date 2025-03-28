@@ -662,21 +662,29 @@
 
 
 
+    .case_info .section .tags
+    {
+        order: 2;
+    }
+
+
     .case_info .section .info
     {
+        order: 3;
+
         width: calc(100% - 320px);
     }
+
+
+    .case_info .section .info.small
+    {
+        width: calc(100% - 508px);
+    }
+
 
     .case_info .section .info.middle
     {
         width: calc(100% - 480px);
-    }
-
-    .case_info .section .info.small
-    {
-        width: calc(100% - 528px);
-        margin-right: 0;
-        margin-left: auto;
     }
 
 
@@ -688,6 +696,23 @@
     .case_info .section .info.small .desc
     {
         line-height: calc(100% + 8px);
+    }
+
+
+    .case_info .section .logo
+    {
+        justify-content: flex-start;
+        order: 1;
+
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .case_info .section .logo img
+    {
+        max-width: 200px;
+        max-height: 48px;
     }
 
 

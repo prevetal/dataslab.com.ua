@@ -546,20 +546,33 @@
     }
 
 
+    .case_info .section .tags
+    {
+        order: 4;
+
+        margin-top: 24px;
+    }
+
+
     .case_info .section .info,
     .case_info .section .info.middle,
     .case_info .section .info.small
     {
-        order: 2;
-
         width: 100%;
         margin-top: 24px;
     }
 
 
+    .case_info .section .tags + .info,
     .case_info .section .quote + .info
     {
         margin-top: 0;
+    }
+
+
+    .case_info .section .logo img
+    {
+        max-height: 44px;
     }
 
 

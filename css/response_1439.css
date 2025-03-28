@@ -852,6 +852,12 @@
     }
 
 
+    .case_info .section .info.small
+    {
+        width: calc(100% - 748px);
+    }
+
+
     .case_info .section .info.middle
     {
         width: calc(100% - 540px);

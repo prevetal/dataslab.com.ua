@@ -2756,7 +2756,7 @@ header .mob_menu_btn.active span:after
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    width: 440px;
+    width: 468px;
     max-width: 100%;
 
     gap: 16px 12px;
@@ -2788,8 +2788,6 @@ header .mob_menu_btn.active span:after
 .case_info .section .info.small
 {
     width: 456px;
-    margin-right: auto;
-    margin-left: 178px;
 }
 
 
@@ -2817,6 +2815,27 @@ header .mob_menu_btn.active span:after
 .case_info .section .info.small .desc
 {
     line-height: 30px;
+}
+
+
+.case_info .section .logo
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    width: 200px;
+    max-width: 100%;
+}
+
+
+.case_info .section .logo img
+{
+    display: block;
+
+    max-width: 100%;
 }
 
 

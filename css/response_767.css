@@ -498,6 +498,18 @@
 
 
 
+    .case_info .section .logo
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .case_info .section .logo img
+    {
+        max-height: 40px;
+    }
+
+
     .case_info .section .quote .icon
     {
         width: 68px;
