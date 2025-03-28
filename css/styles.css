@@ -4137,6 +4137,31 @@ header .mob_menu_btn.active span:after
 }
 
 
+.our_services .link
+{
+    margin-top: 40px;
+}
+
+
+.our_services .link .btn
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+
+    display: inline-block;
+
+    padding: 17px 48px;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 90px;
+    background: #a9ca4b;
+}
+
+
 
 /*-------------
     Why we2

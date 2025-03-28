@@ -417,6 +417,24 @@
 
 
 
+    /*------------------
+        Our services
+    ------------------*/
+    .our_services .link
+    {
+        margin-top: 28px;
+    }
+
+
+    .our_services .link .btn
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/
