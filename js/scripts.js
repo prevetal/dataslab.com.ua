@@ -92,6 +92,42 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	// Tabs slider
+	const tabsSliders = [],
+		tabsSlider = document.querySelectorAll('.swiper.tabs')
+
+	tabsSlider.forEach((el, i) => {
+		el.classList.add('tabs_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			loopAdditionalSlides: 1,
+			slidesPerView: 'auto',
+			breakpoints: {
+				0: {
+					spaceBetween: 48
+				},
+				768: {
+					spaceBetween: 60
+				},
+				1024: {
+					spaceBetween: 80
+				},
+				1280: {
+					spaceBetween: 120
+				}
+			}
+		}
+
+		tabsSliders.push(new Swiper('.tabs_s' + i, options))
+	})
+
+
 	// Mini popups
 	$('.mini_modal_btn').click(function(e) {
 		e.preventDefault()

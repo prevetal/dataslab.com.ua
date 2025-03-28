@@ -1194,12 +1194,6 @@
     /*------------------
         Our services
     ------------------*/
-    .our_services .tabs
-    {
-        gap: 24px;
-    }
-
-
     .our_services .tabs .btn
     {
         font-size: 20px;

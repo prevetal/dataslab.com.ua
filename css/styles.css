@@ -3980,20 +3980,24 @@ header .mob_menu_btn.active span:after
 /*------------------
     Our services
 ------------------*/
+.our_services .swiper.tabs
+{
+    overflow: visible !important;
+}
+
+
+.our_services .swiper.tabs .swiper-slide
+{
+    width: auto;
+}
+
+
 .our_services .tabs
 {
-    display: flex;
-    align-content: stretch;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    margin-bottom: 54px;
+    margin-bottom: 48px;
 
     border-top: 1px solid #39439e;
     border-bottom: 1px solid #39439e;
-
-    gap: 30px;
 }
 
 
@@ -4011,7 +4015,7 @@ header .mob_menu_btn.active span:after
     justify-content: flex-start;
 
     width: 100%;
-    padding: 37px 0;
+    padding: 27px 0;
 
     transition: color .2s linear;
     text-align: left;
@@ -4031,6 +4035,7 @@ header .mob_menu_btn.active span:after
 
     content: '';
     transition: width .3s linear;
+    pointer-events: none;
 
     background: #39439e;
 }

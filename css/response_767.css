@@ -827,28 +827,13 @@
     ------------------*/
     .our_services .tabs
     {
-        flex-wrap: wrap;
-
-        padding: 23px 0;
+        margin-bottom: 40px;
     }
 
 
     .our_services .tabs .btn
     {
-        width: 100%;
-        padding: 0;
-    }
-
-
-    .our_services .tabs .btn br
-    {
-        display: none;
-    }
-
-
-    .our_services .tabs .btn:after
-    {
-        display: none;
+        padding: 19px 0;
     }
 
 
