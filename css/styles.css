@@ -320,7 +320,21 @@ button
 .fancybox__content > .f-button.is-close-btn,
 .is-compact .fancybox__content > .f-button.is-close-btn
 {
-    display: none;
+    top: 20px;
+    right: 20px;
+
+    opacity: 1;
+
+    --f-button-width: 34px;
+    --f-button-height: 34px;
+    --f-button-border-radius: 0;
+    --f-button-color: var(--text_color);
+    --f-button-hover-color: var(--text_color);
+    --f-button-svg-width: 24px;
+    --f-button-svg-height: 24px;
+    --f-button-bg: transparent;
+    --f-button-hover-bg: transparent;
+    --f-button-active-bg: transparent;
 }
 
 

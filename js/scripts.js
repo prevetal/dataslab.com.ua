@@ -166,16 +166,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	Fancybox.defaults.dragToClose = false
 	Fancybox.defaults.placeFocusBack = false
 
-	Fancybox.defaults.tpl = {
-		closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_close"></use></svg></button>',
-
-		main: `<div class="fancybox__container" role="dialog" aria-modal="true" aria-label="{{MODAL}}" tabindex="-1">
-			<div class="fancybox__backdrop"></div>
-			<div class="fancybox__carousel"></div>
-			<div class="fancybox__footer"></div>
-		</div>`,
-	}
-
 
 	// Modals
 	$('.modal_btn').click(function(e) {
@@ -333,9 +323,6 @@ window.addEventListener('resize', function () {
 function whyWeLogos() {
 	let logosWrapH = $('.why_we .col .logos_wrap').outerHeight(),
 		logosH = $('.why_we .col .logos').outerHeight()
-
-		console.log(logosWrapH)
-		console.log(logosH)
 
 	logosWrapH < logosH
 		? $('.why_we .col .spoler_btn').addClass('show')
