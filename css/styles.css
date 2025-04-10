@@ -2065,6 +2065,17 @@ header .mob_menu_btn.active span:after
 }
 
 
+.cases .swiper .swiper-slide + .swiper-slide
+{
+    display: none;
+}
+
+.cases .swiper-initialized .swiper-slide + .swiper-slide
+{
+    display: block;
+}
+
+
 .cases .swiper-fade .swiper-slide.active
 {
     z-index: 3;
