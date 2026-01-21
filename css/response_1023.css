@@ -114,10 +114,10 @@
     .main_slider .items,
     .main_slider .data.big .items
     {
-        font-size: var(--font_size);
-
         width: calc(100% + 24px);
         max-width: calc(100% + 24px);
+
+        font-size: var(--font_size);
     }
 
 
@@ -528,10 +528,10 @@
 
     .case_info .tags > *
     {
+        padding: 10px 20px;
+
         font-size: 14px;
         line-height: 20px;
-
-        padding: 10px 20px;
     }
 
 
@@ -630,10 +630,10 @@
 
     .action_block .btn
     {
-        font-size: 17px;
-
         height: 48px;
         padding: 0 28px;
+
+        font-size: 17px;
     }
 
 
@@ -705,10 +705,10 @@
 
     .service_industries .action .btn
     {
-        font-size: 16px;
-
         height: 48px;
         margin-top: 20px;
+
+        font-size: 16px;
     }
 
 
@@ -779,10 +779,10 @@
 
     .about_head .message
     {
+        width: 100%;
+
         font-size: 15px;
         line-height: calc(100% + 8px);
-
-        width: 100%;
     }
 
 
@@ -794,10 +794,10 @@
 
     .about_head .exp
     {
-        font-size: 14px;
-
         width: 280px;
         padding: 24px 48px 24px 24px;
+
+        font-size: 14px;
     }
 
 
@@ -829,11 +829,11 @@
 
     .about_data .data .exp
     {
-        font-size: 15px;
-
         width: 100%;
         min-height: 154px;
         padding: 24px 60px 24px 24px;
+
+        font-size: 15px;
     }
 
 
@@ -860,9 +860,9 @@
 
     .about_data .stats .desc
     {
-        font-size: 15px;
-
         height: calc(100% - 8px);
+
+        font-size: 15px;
     }
 
 
@@ -917,17 +917,17 @@
 
     .why_we .col .stats .desc
     {
-        font-size: 15px;
-
         height: calc(100% - 8px);
+
+        font-size: 15px;
     }
 
 
     .why_we .col .items
     {
-        font-size: 16px;
-
         margin-top: 24px;
+
+        font-size: 16px;
 
         gap: 8px;
     }
@@ -1080,6 +1080,212 @@
     .why_we2 .data
     {
         width: calc(100% - 324px);
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page
+    {
+        padding-block: 80px;
+    }
+
+
+    .error_page .data
+    {
+        width: 75%;
+
+        gap: 32px;
+    }
+
+
+    .error_page .code
+    {
+        display: none;
+
+        width: 100%;
+    }
+
+
+    .error_page .code.mob
+    {
+        display: flex;
+    }
+
+
+
+    /*-----------
+        Products
+    -----------*/
+    .products .head .title + *
+    {
+        width: calc(100% - 320px);
+
+        gap: 24px;
+    }
+
+
+    .products .head .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 8px);
+    }
+
+
+
+    .products .product
+    {
+        padding-inline: 28px;
+    }
+
+
+    .products .product .icon
+    {
+        right: 28px;
+
+        width: 52px;
+    }
+
+
+    .products .product .name
+    {
+        width: calc(100% - 76px);
+
+        font-size: 22px;
+    }
+
+
+    .products .product .desc
+    {
+        width: calc(100% - 76px);
+    }
+
+
+    .products .product .tags > *
+    {
+        padding-inline: 16px;
+
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .info
+    {
+        width: 360px;
+    }
+
+
+    .product_info .head .title
+    {
+        font-size: 44px;
+    }
+
+
+    .product_info .head .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .head .btn
+    {
+        margin-top: 12px;
+
+        font-size: 16px;
+    }
+
+
+
+    .product_info .data .info
+    {
+        width: 100%;
+    }
+
+
+    .product_info .data .image
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        How achieved
+    ------------------*/
+    .how_achieved .swiper-slide
+    {
+        width: 300px;
+    }
+
+
+    .how_achieved .item,
+    .how_achieved .item.top_border,
+    .how_achieved .item.bottom_border
+    {
+        padding: 24px;
+
+        border-radius: 20px;
+    }
+
+
+    .how_achieved .item .desc
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------
+        Uase range
+    ----------------*/
+    .uase_range .features .title
+    {
+        font-size: 22px;
+        line-height: 44px;
+    }
+
+
+    .uase_range .features .items > *
+    {
+        font-size: 15px;
+    }
+
+
+
+    .uase_range .swiper-slide
+    {
+        width: 300px;
+    }
+
+
+    .uase_range .item,
+    .uase_range .item.top_border,
+    .uase_range .item.bottom_border
+    {
+        padding: 24px;
+
+        border-radius: 20px;
+    }
+
+
+    .uase_range .item .name
+    {
+        font-size: 20px;
+    }
+
+
+    .uase_range .item .desc
+    {
+        margin-top: 8px;
+
+        font-size: 15px;
     }
 
 

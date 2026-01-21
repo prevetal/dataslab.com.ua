@@ -126,25 +126,25 @@
 
     .form .input
     {
-        font-size: 16px;
-
         height: 52px;
+
+        font-size: 16px;
     }
 
 
     .form textarea
     {
-        font-size: 16px;
-
         height: 92px;
+
+        font-size: 16px;
     }
 
 
     .form .submit_btn
     {
-        font-size: 16px;
-
         height: 52px;
+
+        font-size: 16px;
     }
 
 
@@ -173,18 +173,18 @@
 
     .main_slider .link a
     {
+        padding: 11px 39px;
+
         font-size: 17px;
         line-height: 21px;
-
-        padding: 11px 39px;
     }
 
 
     .main_slider .items
     {
-        font-size: 17px;
-
         width: 476px;
+
+        font-size: 17px;
     }
 
 
@@ -197,12 +197,12 @@
 
     .main_slider .message
     {
-        line-height: calc(100% + 10px);
-
         width: 200px;
         min-height: 160px;
         margin-right: 0;
         margin-bottom: 124px;
+
+        line-height: calc(100% + 10px);
     }
 
 
@@ -308,10 +308,10 @@
 
     .cases .filter .nice-select .current
     {
+        height: 40px;
+
         font-size: 17px;
         line-height: 40px;
-
-        height: 40px;
     }
 
 
@@ -388,10 +388,10 @@
 
     .cases .case .name
     {
+        width: 344px;
+
         font-size: 36px;
         line-height: calc(100% + 8px);
-
-        width: 344px;
     }
 
 
@@ -413,10 +413,10 @@
 
     .cases .case .tags > *
     {
+        padding: 8px 20px;
+
         font-size: 14px;
         line-height: 20px;
-
-        padding: 8px 20px;
     }
 
 
@@ -436,10 +436,10 @@
 
     .cases .case .stats .val
     {
+        margin-bottom: 0;
+
         font-size: 28px;
         line-height: 40px;
-
-        margin-bottom: 0;
     }
 
 
@@ -634,9 +634,9 @@
     ---------------*/
     .case_info .head .title
     {
-        line-height: calc(100% + 8px);
-
         width: 100%;
+
+        line-height: calc(100% + 8px);
     }
 
 
@@ -759,10 +759,10 @@
 
     .action_block .btn
     {
-        font-size: 18px;
-
         height: 52px;
         padding: 0 32px;
+
+        font-size: 18px;
     }
 
 
@@ -813,10 +813,10 @@
 
     .service_industries .industry .name
     {
+        min-height: 56px;
+
         font-size: 20px;
         line-height: calc(100% + 8px);
-
-        min-height: 56px;
     }
 
 
@@ -830,19 +830,19 @@
 
     .service_industries .action
     {
-        font-size: 26px;
-
         padding: 28px;
+
+        font-size: 26px;
     }
 
 
     .service_industries .action .btn
     {
-        font-size: 17px;
-
         height: 52px;
         margin-top: 28px;
         padding: 0 32px;
+
+        font-size: 17px;
     }
 
 
@@ -936,11 +936,11 @@
 
     .about_head .message
     {
-        font-size: 16px;
-        line-height: calc(100% + 10px);
-
         margin-top: 28px;
         padding-left: 24px;
+
+        font-size: 16px;
+        line-height: calc(100% + 10px);
     }
 
 
@@ -952,11 +952,11 @@
 
     .about_head .exp
     {
-        font-size: 15px;
-        line-height: calc(100% + 8px);
-
         width: 312px;
         padding: 28px 60px 28px 28px;
+
+        font-size: 15px;
+        line-height: calc(100% + 8px);
     }
 
 
@@ -988,12 +988,12 @@
 
     .about_data .data .exp
     {
-        font-size: 16px;
-        line-height: calc(100% + 8px);
-
         width: 300px;
         min-height: 260px;
         padding: 40px 60px 24px 24px;
+
+        font-size: 16px;
+        line-height: calc(100% + 8px);
     }
 
 
@@ -1100,9 +1100,9 @@
 
     .why_we .col .spoler_btn
     {
-        font-size: 16px;
-
         margin-top: 20px;
+
+        font-size: 16px;
     }
 
 
@@ -1228,9 +1228,9 @@
     ------------------*/
     .our_services .tabs .btn
     {
-        font-size: 20px;
-
         padding: 23px 0;
+
+        font-size: 20px;
     }
 
 
@@ -1248,10 +1248,10 @@
 
     .our_services .link .btn
     {
+        padding: 14px 36px;
+
         font-size: 17px;
         line-height: 23px;
-
-        padding: 14px 36px;
     }
 
 
@@ -1282,6 +1282,263 @@
     .why_we2 .data .name
     {
         font-size: 20px;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page
+    {
+        padding-block: 100px;
+    }
+
+
+    .error_page .data
+    {
+        width: 360px;
+
+        gap: 28px;
+    }
+
+
+    .error_page .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .error_page .links a
+    {
+        height: 48px;
+        padding-inline: 48px;
+
+        font-size: 16px;
+    }
+
+
+    .error_page .code
+    {
+        width: calc(100% - 440px);
+        padding-block: 80px;
+        padding-inline: 80px;
+    }
+
+
+
+    /*-----------
+        Products
+    -----------*/
+    .products
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .products:after
+    {
+        max-width: calc(100% - 48px);
+    }
+
+
+    .products .head .title + *
+    {
+        width: calc(100% - 400px);
+
+        gap: 32px;
+    }
+
+
+    .products .head .desc
+    {
+        font-size: 18px;
+        line-height: calc(100% + 10px);
+    }
+
+
+    .products .filter
+    {
+        gap: 24px 80px;
+    }
+
+
+    .products .filter .nice-select .current
+    {
+        height: 40px;
+
+        font-size: 17px;
+        line-height: 40px;
+    }
+
+
+    .products .filter .nice-select-dropdown
+    {
+        top: -4px;
+
+        width: 220px;
+    }
+
+
+    .products .filter .nice-select .list .option
+    {
+        font-size: 17px;
+    }
+
+
+
+    .products .grid > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    .products .more
+    {
+        margin-top: 40px;
+    }
+
+
+    .products .more .btn
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .cont
+    {
+        min-height: 450px;
+        padding-block: 60px;
+    }
+
+
+    .product_info .head .info
+    {
+        width: 524px;
+    }
+
+
+    .product_info .head .title
+    {
+        font-size: 48px;
+    }
+
+
+    .product_info .head .desc
+    {
+        font-size: 18px;
+        line-height: calc(100% + 10px);
+    }
+
+
+    .product_info .head .btn
+    {
+        font-size: 17px;
+    }
+
+
+
+    .product_info .data
+    {
+        margin-top: 60px;
+    }
+
+
+    .product_info .data .info
+    {
+        width: calc(100% - 408px);
+    }
+
+
+    .product_info .data .image
+    {
+        width: 360px;
+    }
+
+
+    .product_info .data .decoration
+    {
+        display: none;
+    }
+
+
+    .product_info .data .line
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*------------------
+        How achieved
+    ------------------*/
+    .how_achieved .swiper-slide
+    {
+        width: 348px;
+    }
+
+
+    .how_achieved .controls
+    {
+        display: flex;
+    }
+
+
+    .how_achieved .item,
+    .how_achieved .item.top_border,
+    .how_achieved .item.bottom_border
+    {
+        border-radius: 24px;
+    }
+
+
+
+    /*----------------
+        Uase range
+    ----------------*/
+    .uase_range .features .title
+    {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+
+    .uase_range .features .items > *
+    {
+        font-size: 16px;
+    }
+
+
+    .uase_range .features .icon
+    {
+        width: 20px;
+        margin-block: 2px;
+    }
+
+
+
+    .uase_range .swiper-slide
+    {
+        width: 348px;
+    }
+
+
+    .uase_range .controls
+    {
+        display: flex;
+    }
+
+
+    .uase_range .item,
+    .uase_range .item.top_border,
+    .uase_range .item.bottom_border
+    {
+        border-radius: 24px;
     }
 
 

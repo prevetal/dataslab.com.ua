@@ -154,20 +154,20 @@
 
     .about_head .desc
     {
+        margin-top: 24px;
+
         font-size: 22px;
         line-height: calc(100% + 14px);
-
-        margin-top: 24px;
     }
 
 
     .about_head .exp
     {
-        font-size: 18px;
-        line-height: calc(100% + 12px);
-
         width: 400px;
         padding: 44px 80px 44px 44px;
+
+        font-size: 18px;
+        line-height: calc(100% + 12px);
     }
 
 
@@ -198,12 +198,12 @@
 
     .about_data .data .exp
     {
-        font-size: 18px;
-        line-height: calc(100% + 12px);
-
         width: 400px;
         min-height: 280px;
         padding: 40px 80px 40px 40px;
+
+        font-size: 18px;
+        line-height: calc(100% + 12px);
     }
 
 
@@ -233,10 +233,10 @@
 
     .why_we .col .stats .desc
     {
+        margin-top: 4px;
+
         font-size: 18px;
         line-height: calc(100% + 12px);
-
-        margin-top: 4px;
     }
 
 
@@ -248,10 +248,10 @@
 
     .why_we .col .desc
     {
+        margin-top: 20px;
+
         font-size: 18px;
         line-height: calc(100% + 12px);
-
-        margin-top: 20px;
     }
 
 
@@ -277,14 +277,153 @@
     /*------------------------
         Service industries
     ------------------------*/
-    .service_industries .industry
+    .service_industries .industry,
+    .service_industries .action
     {
         padding: 48px;
     }
 
 
-    .service_industries .action
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page
+    {
+        padding-block: 160px;
+    }
+
+
+    .error_page .title
+    {
+        line-height: calc(100% + 12px);
+    }
+
+
+    .error_page .desc
+    {
+        font-size: 20px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .error_page .links a
+    {
+        height: 56px;
+        padding-inline: 60px;
+
+        font-size: 18px;
+    }
+
+
+    .error_page .code
+    {
+        padding-block: 124px;
+        padding-inline: 124px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .cont
+    {
+        min-height: 600px;
+        padding-block: 80px;
+    }
+
+
+    .product_info .head .desc
+    {
+        width: 500px;
+
+        font-size: 22px;
+        line-height: calc(100% + 14px);
+    }
+
+
+    .product_info .head .btn
+    {
+        margin-top: 24px;
+        padding-block: 12px;
+        padding-inline: 44px;
+    }
+
+
+
+    .product_info .data .desc,
+    .product_info .data .features
+    {
+        font-size: 18px;
+        line-height: 1.75;
+    }
+
+
+    .product_info .data .features .val
+    {
+        padding-top: 20px;
+
+        font-size: 30px;
+    }
+
+
+    .product_info .data .image
+    {
+        width: 394px;
+    }
+
+
+    .product_info .data .decoration
+    {
+        width: 260px;
+        min-height: 228px;
+    }
+
+
+
+    /*------------------
+        How achieved
+    ------------------*/
+    .how_achieved .item
     {
         padding: 48px;
+
+        gap: 20px;
+    }
+
+
+
+    /*----------------
+        Uase range
+    ----------------*/
+    .uase_range .features .title
+    {
+        font-size: 28px;
+        line-height: 68px;
+    }
+
+
+    .uase_range .features .items > *
+    {
+        font-size: 18px;
+    }
+
+
+
+    .uase_range .item
+    {
+        padding: 48px;
+
+        gap: 20px;
+    }
+
+
+    .uase_range .item .name
+    {
+        min-height: 68px;
+
+        font-size: 24px;
+        line-height: calc(100% + 10px);
     }
 }

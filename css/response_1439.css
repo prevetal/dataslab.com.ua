@@ -131,10 +131,10 @@
 
     .block_head .link .btn
     {
+        padding: 16px 40px;
+
         font-size: 18px;
         line-height: 22px;
-
-        padding: 16px 40px;
     }
 
 
@@ -169,17 +169,17 @@
 
     .form .input
     {
-        font-size: 18px;
-
         height: 56px;
+
+        font-size: 18px;
     }
 
 
     .form textarea
     {
-        font-size: 18px;
-
         height: 100px;
+
+        font-size: 18px;
     }
 
 
@@ -191,10 +191,10 @@
 
     .form .submit_btn
     {
-        font-size: 18px;
-
         height: 56px;
         padding: 12px 28px;
+
+        font-size: 18px;
     }
 
 
@@ -245,20 +245,20 @@
 
     .main_slider .link a
     {
+        padding: 12px 48px;
+
         font-size: 18px;
         line-height: 22px;
-
-        padding: 12px 48px;
     }
 
 
     .main_slider .items
     {
-        font-size: 18px;
-
         width: 500px;
         margin-bottom: -24px;
         margin-left: -24px;
+
+        font-size: 18px;
     }
 
 
@@ -291,12 +291,12 @@
 
     .main_slider .message
     {
-        line-height: calc(100% + 12px);
-
         width: 208px;
         min-height: 168px;
         margin-right: 168px;
         padding: 24px;
+
+        line-height: calc(100% + 12px);
 
         border-radius: 20px 900px 900px 20px;
     }
@@ -356,9 +356,9 @@
 
     .industries .info .stats
     {
-        font-size: 14px;
-
         margin-top: 24px;
+
+        font-size: 14px;
 
         gap: 40px;
     }
@@ -380,10 +380,10 @@
 
     .industries .info .stats .val
     {
+        margin-bottom: 0;
+
         font-size: 28px;
         line-height: 40px;
-
-        margin-bottom: 0;
     }
 
 
@@ -436,10 +436,10 @@
 
     .cases .head .desc
     {
+        width: 600px;
+
         font-size: 20px;
         line-height: calc(100% + 12px);
-
-        width: 600px;
     }
 
 
@@ -451,10 +451,10 @@
 
     .cases .filter .nice-select .current
     {
+        height: 48px;
+
         font-size: 18px;
         line-height: 48px;
-
-        height: 48px;
     }
 
 
@@ -470,9 +470,9 @@
 
     .cases .filter .nice-select .list .option
     {
-        font-size: 18px;
-
         padding: 12px 0;
+
+        font-size: 18px;
     }
 
 
@@ -512,10 +512,10 @@
 
     .cases .case .name
     {
+        width: 344px;
+
         font-size: 36px;
         line-height: calc(100% + 8px);
-
-        width: 344px;
     }
 
 
@@ -537,10 +537,10 @@
 
     .cases .case .tags > *
     {
+        padding: 8px 20px;
+
         font-size: 14px;
         line-height: 20px;
-
-        padding: 8px 20px;
     }
 
 
@@ -554,10 +554,10 @@
 
     .cases .case .stats .val
     {
+        margin-bottom: 0;
+
         font-size: 28px;
         line-height: 40px;
-
-        margin-bottom: 0;
     }
 
 
@@ -629,10 +629,10 @@
 
     .cases .more .btn
     {
-        font-size: 18px;
-
         width: 180px;
         height: 52px;
+
+        font-size: 18px;
     }
 
 
@@ -689,9 +689,9 @@
 
     .articles .article .author
     {
-        font-size: 13px;
-
         margin-top: 28px;
+
+        font-size: 13px;
     }
 
 
@@ -823,10 +823,10 @@
 
     .case_info .head .desc
     {
+        width: 100%;
+
         font-size: 20px;
         line-height: calc(100% + 12px);
-
-        width: 100%;
     }
 
 
@@ -838,10 +838,10 @@
 
     .case_info .stats .val
     {
+        margin-bottom: 8px;
+
         font-size: 30px;
         line-height: 100%;
-
-        margin-bottom: 8px;
     }
 
 
@@ -914,10 +914,10 @@
 
     .action_block .btn
     {
-        font-size: 19px;
-
         height: 56px;
         padding: 0 40px;
+
+        font-size: 19px;
     }
 
 
@@ -933,9 +933,9 @@
 
     .service_info .head .title
     {
-        line-height: calc(100% + 12px);
-
         width: 480px;
+
+        line-height: calc(100% + 12px);
     }
 
 
@@ -949,10 +949,10 @@
 
     .service_info .head .desc
     {
+        width: 100%;
+
         font-size: 20px;
         line-height: calc(100% + 14px);
-
-        width: 100%;
     }
 
 
@@ -1002,10 +1002,10 @@
 
     .service_industries .industry .name
     {
+        min-height: 68px;
+
         font-size: 24px;
         line-height: calc(100% + 10px);
-
-        min-height: 68px;
     }
 
 
@@ -1017,19 +1017,19 @@
 
     .service_industries .industry .desc
     {
+        margin-top: 12px;
+
         font-size: 16px;
         line-height: calc(100% + 10px);
-
-        margin-top: 12px;
     }
 
 
 
     .service_industries .action
     {
-        font-size: 30px;
-
         padding: 48px;
+
+        font-size: 30px;
 
         border-radius: 20px 20px 200px;
     }
@@ -1037,11 +1037,11 @@
 
     .service_industries .action .btn
     {
-        font-size: 18px;
-
         height: 56px;
         margin-top: 32px;
         padding: 0 40px;
+
+        font-size: 18px;
     }
 
 
@@ -1110,21 +1110,21 @@
 
     .about_head .message
     {
-        font-size: 18px;
-        line-height: calc(100% + 16px);
-
         margin-top: 28px;
         padding-left: 24px;
+
+        font-size: 18px;
+        line-height: calc(100% + 16px);
     }
 
 
     .about_head .exp
     {
-        font-size: 17px;
-        line-height: calc(100% + 10px);
-
         width: 368px;
         padding: 40px 68px 40px 40px;
+
+        font-size: 17px;
+        line-height: calc(100% + 10px);
     }
 
 
@@ -1156,12 +1156,12 @@
 
     .about_data .data .exp
     {
-        font-size: 17px;
-        line-height: calc(100% + 10px);
-
         width: 324px;
         min-height: 280px;
         padding: 40px 80px 24px 28px;
+
+        font-size: 17px;
+        line-height: calc(100% + 10px);
     }
 
 
@@ -1243,10 +1243,10 @@
 
     .why_we .col .desc
     {
+        margin-top: 16px;
+
         font-size: 16px;
         line-height: calc(100% + 10px);
-
-        margin-top: 16px;
     }
 
 
@@ -1288,10 +1288,10 @@
 
     .our_services .link .btn
     {
+        padding: 16px 40px;
+
         font-size: 18px;
         line-height: 24px;
-
-        padding: 16px 40px;
     }
 
 
@@ -1302,6 +1302,352 @@
     .why_we2 .data .name
     {
         font-size: 22px;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page
+    {
+        padding-block: 124px;
+    }
+
+
+    .error_page .data
+    {
+        width: 400px;
+        max-width: 100%;
+
+        gap: 32px;
+    }
+
+
+    .error_page .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .error_page .links a
+    {
+        height: 52px;
+        padding-inline: 52px;
+    }
+
+
+    .error_page .code
+    {
+        width: calc(100% - 500px);
+        padding-block: 100px;
+        padding-inline: 100px;
+    }
+
+
+
+    /*-----------
+        Products
+    -----------*/
+    .products
+    {
+        padding-bottom: 48px;
+    }
+
+
+    .products .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .products .head .title
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .products .head .title + *
+    {
+        width: calc(100% - 480px);
+    }
+
+
+    .products .head .desc
+    {
+        width: 600px;
+
+        font-size: 20px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .products .filter
+    {
+        gap: 24px 100px;
+    }
+
+
+    .products .filter .nice-select .current
+    {
+        height: 48px;
+
+        font-size: 18px;
+        line-height: 48px;
+    }
+
+
+    .products .filter .nice-select-dropdown
+    {
+        left: -24px;
+
+        width: 225px;
+        min-width: calc(100% + 48px);
+        padding: 48px 24px 24px;
+    }
+
+
+    .products .filter .nice-select .list .option
+    {
+        padding: 12px 0;
+
+        font-size: 18px;
+    }
+
+
+
+    .products .grid
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .products .grid > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .products .product
+    {
+        padding-inline: 40px;
+    }
+
+
+    .products .product .icon
+    {
+        right: 40px;
+
+        width: 56px;
+    }
+
+
+    .products .product .name
+    {
+        width: calc(100% - 80px);
+
+        font-size: 24px;
+    }
+
+
+    .products .product .desc
+    {
+        width: calc(100% - 80px);
+        min-height: 0;
+
+        font-size: 14px;
+    }
+
+
+    .products .product .tags
+    {
+        margin-top: 20px;
+
+        gap: 8px;
+    }
+
+
+    .products .product .tags > *
+    {
+        padding-block: 4px;
+        padding-inline: 20px;
+
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+
+
+    .products .more
+    {
+        margin-top: 40px;
+    }
+
+
+    .products .more .btn
+    {
+        width: 180px;
+        height: 52px;
+
+        font-size: 18px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .title
+    {
+        font-size: 52px;
+    }
+
+
+    .product_info .head .desc
+    {
+        font-size: 20px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .product_info .head .btn
+    {
+        padding-inline: 40px;
+
+        font-size: 18px;
+    }
+
+
+
+    .product_info .data
+    {
+        margin-top: 80px;
+    }
+
+
+    .product_info .data .info
+    {
+        width: calc(100% - 684px);
+
+        gap: 20px;
+    }
+
+
+    .product_info .data .image
+    {
+        width: 364px;
+    }
+
+
+    .product_info .data .decoration
+    {
+        width: 240px;
+        min-height: 211px;
+    }
+
+
+
+    /*------------------
+        How achieved
+    ------------------*/
+    .how_achieved .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .how_achieved .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .how_achieved .item
+    {
+        padding: 40px;
+    }
+
+
+
+    /*----------------
+        Uase range
+    ----------------*/
+    .uase_range .features .title
+    {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+
+    .uase_range .features .items > *
+    {
+        font-size: 16px;
+    }
+
+
+    .uase_range .features .icon
+    {
+        width: 20px;
+        margin-block: 2px;
+    }
+
+
+
+    .uase_range .swiper
+    {
+        margin-top: 40px;
+    }
+
+
+    .uase_range .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .uase_range .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .uase_range .item
+    {
+        padding: 40px;
+    }
+
+
+    .uase_range .item .thumb
+    {
+        width: 124px;
+        height: 110px;
+        margin-bottom: 20px;
+    }
+
+
+    .uase_range .item .name
+    {
+        min-height: 0;
+
+        font-size: 22px;
+        line-height: calc(100% + 10px);
+    }
+
+
+    .uase_range .item .desc
+    {
+        margin-top: 12px;
+
+        font-size: 16px;
     }
 
 
@@ -1352,9 +1698,9 @@
 
     .modal_title
     {
-        font-size: 24px;
-
         min-height: 0;
         margin-bottom: 24px;
+
+        font-size: 24px;
     }
 }

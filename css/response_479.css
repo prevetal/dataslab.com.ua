@@ -123,13 +123,13 @@
     .main_slider .items,
     .main_slider .data.big .items
     {
-        font-size: 14px;
-
         width: 100%;
         max-width: 100%;
         margin-top: 28px;
         margin-bottom: -12px;
         margin-left: 0;
+
+        font-size: 14px;
     }
 
 
@@ -150,10 +150,10 @@
 
     .main_slider .message
     {
-        font-size: 14px;
-
         margin-top: 28px;
         padding: 16px 24px 16px 0;
+
+        font-size: 14px;
     }
 
 
@@ -431,6 +431,59 @@
         width: 100%;
 
         text-align: center;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .data
+    {
+        gap: 32px;
+    }
+
+
+    .error_page .desc
+    {
+        font-size: 14px;
+    }
+
+
+    .error_page .code
+    {
+        width: 216px;
+        padding-block: 40px;
+        padding-inline: 40px;
+    }
+
+
+
+    /*-----------
+        Products
+    -----------*/
+    .products .filter
+    {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .products .filter .nice-select .current,
+    .products .filter .nice-select .list .option
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .title
+    {
+        font-size: 32px;
     }
 
 
