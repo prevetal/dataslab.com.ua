@@ -284,12 +284,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Products
 	initProductsSliders()
-
-	// How achieved
-	initHowAchievedSliders()
-
-	// Uase range
-	initUaseRangeSliders()
 })
 
 
@@ -309,12 +303,6 @@ window.addEventListener('resize', function () {
 
 		// Products
 		initProductsSliders()
-
-		// How achieved
-		initHowAchievedSliders()
-
-		// Uase range
-		initUaseRangeSliders()
 
 
 		// Mob. version
@@ -401,120 +389,5 @@ function initProductsSliders() {
 
 		$('.products .swiper-wrapper').addClass('grid').removeClass('swiper-wrapper')
 		$('.products .grid > *').removeClass('swiper-slide')
-	}
-}
-
-
-// How achieved
-howAchievedSliders = []
-
-function initHowAchievedSliders() {
-	if ($(window).width() < 1280) {
-		if ($('.how_achieved .row').length) {
-			$('.how_achieved .row > *').addClass('swiper-slide')
-			$('.how_achieved .row').addClass('swiper-wrapper').removeClass('row')
-
-			$('.how_achieved .swiper').each(function (i) {
-				$(this).addClass('how_achieved_s' + i)
-
-				let options = {
-					loop: false,
-					loopAdditionalSlides: 1,
-					speed: 500,
-					watchSlidesProgress: true,
-					slideActiveClass: 'active',
-					slideVisibleClass: 'visible',
-					slidesPerView: 'auto',
-					spaceBetween: 16,
-					navigation: {
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev'
-					},
-					pagination: {
-						el: '.swiper-pagination',
-						type: 'bullets',
-						clickable: true,
-						bulletActiveClass: 'active'
-					},
-					on: {
-						init: swiper => setHeight(swiper.el.querySelectorAll('.item')),
-						resize: swiper => {
-							let items = swiper.el.querySelectorAll('.item')
-
-							items.forEach(el => el.style.height = 'auto')
-
-							setHeight(items)
-						}
-					}
-				}
-
-				howAchievedSliders.push(new Swiper('.how_achieved_s' + i, options))
-			})
-		}
-	} else {
-		howAchievedSliders.forEach(element => element.destroy(true, true))
-
-		howAchievedSliders = []
-
-		$('.how_achieved .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
-		$('.how_achieved .row > *').removeClass('swiper-slide')
-	}
-}
-
-
-
-// Uase range
-uaseRangeSliders = []
-
-function initUaseRangeSliders() {
-	if ($(window).width() < 1280) {
-		if ($('.uase_range .row').length) {
-			$('.uase_range .row > *').addClass('swiper-slide')
-			$('.uase_range .row').addClass('swiper-wrapper').removeClass('row')
-
-			$('.uase_range .swiper').each(function (i) {
-				$(this).addClass('uase_range_s' + i)
-
-				let options = {
-					loop: false,
-					loopAdditionalSlides: 1,
-					speed: 500,
-					watchSlidesProgress: true,
-					slideActiveClass: 'active',
-					slideVisibleClass: 'visible',
-					slidesPerView: 'auto',
-					spaceBetween: 16,
-					navigation: {
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev'
-					},
-					pagination: {
-						el: '.swiper-pagination',
-						type: 'bullets',
-						clickable: true,
-						bulletActiveClass: 'active'
-					},
-					on: {
-						init: swiper => setHeight(swiper.el.querySelectorAll('.item')),
-						resize: swiper => {
-							let items = swiper.el.querySelectorAll('.item')
-
-							items.forEach(el => el.style.height = 'auto')
-
-							setHeight(items)
-						}
-					}
-				}
-
-				howAchievedSliders.push(new Swiper('.uase_range_s' + i, options))
-			})
-		}
-	} else {
-		howAchievedSliders.forEach(element => element.destroy(true, true))
-
-		howAchievedSliders = []
-
-		$('.uase_range .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
-		$('.uase_range .row > *').removeClass('swiper-slide')
 	}
 }
