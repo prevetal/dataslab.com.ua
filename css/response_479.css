@@ -252,35 +252,6 @@
 
 
 
-    /*-------------------
-        Contacts info
-    -------------------*/
-    .contacts_info .image
-    {
-        top: 28px;
-    }
-
-
-    .contacts_info .row
-    {
-        margin-left: 0;
-    }
-
-
-    .contacts_info .row > *
-    {
-        width: 100%;
-        margin-left: 0;
-    }
-
-
-    .contacts_info .item .address
-    {
-        margin-top: 16px;
-    }
-
-
-
     /*---------------
         Case info
     ---------------*/

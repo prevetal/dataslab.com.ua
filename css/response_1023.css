@@ -1176,116 +1176,251 @@
     /*------------------
         Product info
     ------------------*/
-    .product_info .head .info
+    .product_info .head:before
     {
-        width: 360px;
+        width: 100%;
+        height: 100%;
+
+        z-index: 2;
+
+        background: linear-gradient(180deg, rgba(255, 255, 255, .00) -111.9%, #39439e 65.45%);
     }
 
 
-    .product_info .head .title
+    .product_info .head .cont
     {
-        font-size: 44px;
+        position: static;
+
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 68px;
+
+        z-index: 0;
+    }
+
+
+    .product_info .head .info
+    {
+        position: relative;
+
+        order: 2;
+
+        width: 100%;
+
+        z-index: 3;
     }
 
 
     .product_info .head .desc
     {
-        font-size: 16px;
+        width: 400px;
     }
 
 
-    .product_info .head .btn
+    .product_info .head .actions > *.big
     {
-        margin-top: 12px;
+        width: 160px;
+    }
 
-        font-size: 16px;
+
+    .product_info .head .image
+    {
+        position: relative;
+
+        width: 640px;
+        max-width: 100%;
+        margin-inline: auto;
+        margin-bottom: -28%;
+
+        z-index: 1;
     }
 
 
 
-    .product_info .data .info
+    /*---------------------
+        Product anchors
+    ---------------------*/
+    .product_anchors .cont
     {
-        width: 100%;
+        gap: 12px;
     }
 
 
-    .product_info .data .image
+    .product_anchors .btn
     {
-        display: none;
+        font-size: 15px;
+    }
+
+
+    .product_anchors .contacts_btn
+    {
+        margin-left: 12px;
+        padding-inline: 24px;
+
+        font-size: 15px;
     }
 
 
 
     /*------------------
-        How achieved
+        Product data
     ------------------*/
-    .how_achieved .swiper-slide
+    .product_data .description .title
     {
-        width: 300px;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
 
-    .how_achieved .item,
-    .how_achieved .item.top_border,
-    .how_achieved .item.bottom_border
+    .product_data .description .text_block
     {
-        padding: 24px;
+        width: 100%;
 
-        border-radius: 20px;
-    }
-
-
-    .how_achieved .item .desc
-    {
-        font-size: 16px;
+        font-size: 15px;
     }
 
 
 
-    /*----------------
-        Uase range
-    ----------------*/
-    .uase_range .features .title
+    .product_data .items
     {
-        font-size: 22px;
-        line-height: 44px;
+        row-gap: 48px;
     }
 
 
-    .uase_range .features .items > *
+    .product_data .items .item
+    {
+        width: 50%;
+        padding-inline: 32px;
+    }
+
+
+
+    /*--------------------------
+        Product architecture
+    --------------------------*/
+    .product_architecture .icons
+    {
+        width: 240px;
+        height: 220px;
+        padding: 40px 40px 24px 24px;
+    }
+
+
+    .product_architecture .icons .icon
+    {
+        height: 48px;
+    }
+
+
+    .product_architecture .data
+    {
+        width: calc(100% - 288px);
+    }
+
+
+    .product_architecture .item
     {
         font-size: 15px;
     }
 
 
 
-    .uase_range .swiper-slide
+    .product_architecture .image
     {
-        width: 300px;
+        height: 360px;
     }
 
 
-    .uase_range .item,
-    .uase_range .item.top_border,
-    .uase_range .item.bottom_border
-    {
-        padding: 24px;
 
-        border-radius: 20px;
+    /*-----------------------
+        Product use cases
+    -----------------------*/
+    .product_use_cases .row > *
+    {
+        width: calc(50% - 24px);
     }
 
 
-    .uase_range .item .name
+
+    /*------------------------
+        Product advantages
+    ------------------------*/
+    .product_advantages .row > *
     {
-        font-size: 20px;
+        width: calc(50% - 24px);
     }
 
 
-    .uase_range .item .desc
-    {
-        margin-top: 8px;
 
-        font-size: 15px;
+    /*---------------------
+        Product license
+    ---------------------*/
+    .product_license .data
+    {
+        order: 2;
+
+        width: 100%;
+        padding: 40px;
+    }
+
+
+
+    .product_license .block_head
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+    .product_license .block_head .desc
+    {
+        gap: 12px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .block_head .desc
+    {
+        width: 100%;
+    }
+
+
+    .tariffs .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .tariffs .tariff
+    {
+        padding: 8px 20px 20px;
+    }
+
+
+    .tariffs .tariff .exp
+    {
+        padding: 8px 16px;
+
+        font-size: 14px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .block_head
+    {
+        width: 100%;
+    }
+
+
+    .action_form .form
+    {
+        width: 100%;
     }
 
 
@@ -1296,5 +1431,12 @@
     footer .menu
     {
         margin-left: auto;
+    }
+
+
+    footer .bottom
+    {
+        width: 100%;
+        padding-left: 0;
     }
 }

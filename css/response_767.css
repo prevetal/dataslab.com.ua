@@ -424,27 +424,150 @@
     -------------------*/
     .contacts_info
     {
-        padding-bottom: 40px;
+        padding-bottom: 0;
     }
+
+
+    .contacts_info .cont
+    {
+        padding: 0 40px;
+    }
+
 
 
     .contacts_info .block_head
     {
-        margin-bottom: 72px;
+        margin-bottom: 10px;
     }
+
+
+    .contacts_info .block_head .title
+    {
+        font-size: 28px;
+
+        text-align: center;
+    }
+
 
 
     .contacts_info .image
     {
+        position: relative;
         top: 0;
 
         width: 100%;
+        height: 276px;
+        margin-bottom: 28px;
+    }
+
+
+    .contacts_info .image img
+    {
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        width: auto;
+        height: 276px;
+        margin-inline: auto;
+
+        transform: translateX(-50%);
+    }
+
+
+
+    .contacts_info .mob_contacts_title
+    {
+        display: block;
+    }
+
+
+    .contacts_info .row
+    {
+        margin-bottom: 0;
+        margin-left: 0;
+
+        gap: 32px;
     }
 
 
     .contacts_info .row > *
     {
-        width: calc(50% - 24px);
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+
+    .contacts_info .item
+    {
+        position: relative;
+
+        font-size: 17px;
+        line-height: calc(100% + 15px);
+    }
+
+
+    .contacts_info .item:after
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 1px;
+
+        content: '';
+        pointer-events: none;
+
+        background: linear-gradient(to right, #fff -120.54%, #39439e 100.84%);
+    }
+
+
+    .contacts_info .item .name
+    {
+        font-size: 17px;
+        line-height: calc(100% + 15px);
+    }
+
+
+    .contacts_info .item .head
+    {
+        padding-right: 32px;
+
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+
+    .contacts_info .item .head .icon
+    {
+        display: block;
+    }
+
+
+    .contacts_info .item .info
+    {
+        display: none;
+
+        margin-top: 32px;
+    }
+
+
+    .contacts_info .item .address
+    {
+        margin-top: 0;
+    }
+
+
+    .contacts_info .item .phone,
+    .contacts_info .item .email
+    {
+        font-size: 20px;
+        line-height: calc(100% + 20px);
     }
 
 
@@ -1170,21 +1293,38 @@
     ------------*/
     footer
     {
-        padding-top: 40px;
-        padding-bottom: 60px;
+        padding-top: 32px;
+        padding-bottom: 4px;
     }
 
 
-    footer .logo img
+    footer .cont
     {
-        width: 145px;
-        height: 30px;
+        padding: 0 40px;
     }
 
 
+    footer .logo,
     footer .menu
     {
         display: none;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 0;
+    }
+
+
+    footer .copyright
+    {
+        width: 1005px;
+        margin-top: 32px;
+
+        font-size: 14px;
+
+        text-align: center;
     }
 
 

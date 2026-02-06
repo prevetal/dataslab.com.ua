@@ -303,6 +303,16 @@ document.addEventListener('DOMContentLoaded', function() {
 			})
 		})
 	}
+
+
+	// Footer
+	$('.contacts_info .item .head').click(function(e) {
+		e.preventDefault()
+
+		$(this)
+			.toggleClass('active')
+			.next('.info').slideToggle(300)
+	})
 })
 
 

@@ -2750,6 +2750,18 @@ header .mob_menu_btn.active span:after
 }
 
 
+.contacts_info .mob_contacts_title
+{
+    display: none;
+
+    margin-bottom: 32px;
+
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+
 .contacts_info .row
 {
     gap: 40px 200px;
@@ -2766,6 +2778,37 @@ header .mob_menu_btn.active span:after
 .contacts_info .item
 {
     font-size: 20px;
+}
+
+
+.contacts_info .item .head
+{
+    position: relative;
+
+    pointer-events: none;
+}
+
+
+.contacts_info .item .head .icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: none;
+
+    width: 12px;
+    height: 9px;
+    margin-block: auto;
+
+    transition: transform .2s linear;
+}
+
+
+.contacts_info .item .head.active .icon
+{
+    transform: rotate(180deg);
 }
 
 
@@ -5345,9 +5388,9 @@ header .mob_menu_btn.active span:after
 
 
 
-/*------------------
-    How achieved
-------------------*/
+/*--------------------------
+    Product architecture
+--------------------------*/
 .product_architecture
 {
     scroll-margin-top: 88px;
@@ -5524,7 +5567,7 @@ header .mob_menu_btn.active span:after
 
     height: 500px;
     margin-top: 80px;
-    padding: 40px;
+    padding: 48px;
 
     border-radius: 30px;
     background: linear-gradient(90deg, var(--Surface-Secondary, rgba(137, 110, 222, .30)) 23.27%, rgba(187, 247, 213, .30)) 81.88%;
@@ -5535,8 +5578,8 @@ header .mob_menu_btn.active span:after
 {
     display: block;
 
-    width: 502px;
     max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -5953,7 +5996,7 @@ header .mob_menu_btn.active span:after
 
     font-size: 26px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: calc(100% + 14px);
 }
 
 
@@ -6029,33 +6072,6 @@ header .mob_menu_btn.active span:after
 
     border-radius: 12px;
     background: #eaf6c8;
-}
-
-
-.tariffs .tariff .link a
-{
-    display: block;
-
-    padding: 12px;
-
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 160%;
-
-    transition: .2s linear;
-    text-align: center;
-    text-decoration: none;
-
-    color: #39439e;
-    border: 1px solid #39439e;
-    border-radius: 100px;
-}
-
-
-.tariffs .tariff .link a:hover
-{
-    color: #fff;
-    background: #39439e;
 }
 
 

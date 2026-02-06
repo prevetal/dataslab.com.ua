@@ -11,6 +11,40 @@
 
 
 
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        gap: 32px;
+    }
+
+
+    .block_head .title,
+    .block_head .title.small
+    {
+        line-height: calc(100% + 12px);
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 20px;
+        line-height: calc(100% + 12px);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit
+    {
+        padding-top: 12px;
+    }
+
+
+
     /*-----------------
         Main slider
     -----------------*/
@@ -329,8 +363,20 @@
     ------------------*/
     .product_info .head .cont
     {
-        min-height: 600px;
-        padding-block: 80px;
+        height: 540px;
+        padding-top: 80px;
+    }
+
+
+    .product_info .head .info
+    {
+        width: 684px;
+    }
+
+
+    .product_info .head .title
+    {
+        font-size: 56px;
     }
 
 
@@ -338,92 +384,397 @@
     {
         width: 500px;
 
-        font-size: 22px;
-        line-height: calc(100% + 14px);
+        font-size: 20px;
+        line-height: calc(100% + 12px);
     }
 
 
-    .product_info .head .btn
+    .product_info .head .actions
     {
-        margin-top: 24px;
-        padding-block: 12px;
-        padding-inline: 44px;
-    }
+        margin-top: 0;
 
-
-
-    .product_info .data .desc,
-    .product_info .data .features
-    {
         font-size: 18px;
-        line-height: 1.75;
+        line-height: calc(100% + 16px);
+
+        gap: 24px;
     }
 
 
-    .product_info .data .features .val
+    .product_info .head .actions > *
     {
-        padding-top: 20px;
-
-        font-size: 30px;
+        width: 180px;
+        padding-left: 20px;
     }
 
 
-    .product_info .data .image
+    .product_info .head .actions > *.big
     {
-        width: 394px;
+        width: 320px;
     }
 
 
-    .product_info .data .decoration
+    .product_info .head .image
     {
-        width: 260px;
-        min-height: 228px;
+        width: 624px;
+        margin-top: 0;
+        margin-right: -24px;
     }
 
 
 
     /*------------------
-        How achieved
+        Product data
     ------------------*/
-    .how_achieved .item
+    .product_data
     {
-        padding: 48px;
-
-        gap: 20px;
+        margin-top: 80px;
     }
 
 
 
-    /*----------------
-        Uase range
-    ----------------*/
-    .uase_range .features .title
+    .product_data .description .title
     {
-        font-size: 28px;
-        line-height: 68px;
+        width: 400px;
+
+        font-size: 24px;
+        line-height: calc(100% + 12px);
     }
 
 
-    .uase_range .features .items > *
+    .product_data .description .text_block
+    {
+        width: calc(100% - 480px);
+
+        font-size: 22px;
+        line-height: calc(100% + 12px);
+    }
+
+
+
+    .product_data .items
+    {
+        margin-top: 68px;
+
+        row-gap: 68px;
+    }
+
+
+    .product_data .items .item
+    {
+        padding-inline: 48px 24px;
+
+        gap: 24px;
+    }
+
+
+    .product_data .items .name
+    {
+        font-size: 26px;
+        line-height: calc(100% + 8px);
+    }
+
+
+    .product_data .items .desc
     {
         font-size: 18px;
     }
 
 
-
-    .uase_range .item
+    .product_data .items .logos img
     {
-        padding: 48px;
-
-        gap: 20px;
+        max-width: 140px;
+        max-height: 80px;
     }
 
 
-    .uase_range .item .name
-    {
-        min-height: 68px;
 
+    /*--------------------------
+        Product architecture
+    --------------------------*/
+    .product_architecture .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .product_architecture .icons
+    {
+        width: 380px;
+        height: 360px;
+    }
+
+
+    .product_architecture .data
+    {
+        width: calc(100% - 460px);
+
+        gap: 24px;
+    }
+
+
+    .product_architecture .item
+    {
+        font-size: 20px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .product_architecture .image
+    {
+        height: 440px;
+        margin-top: 68px;
+
+        border-radius: 28px;
+    }
+
+
+    .product_architecture .image + .row
+    {
+        margin-top: 68px;
+    }
+
+
+
+    /*-----------------------
+        Product use cases
+    -----------------------*/
+    .product_use_cases .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .product_use_cases .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .product_use_cases .item
+    {
+        padding: 44px 72px 44px 44px;
+
+        border-radius: 20px;
+
+        gap: 24px;
+    }
+
+
+    .product_use_cases .item.radius2
+    {
+        border-radius: 20px 200px 20px 20px;
+    }
+
+
+    .product_use_cases .item .name
+    {
         font-size: 24px;
-        line-height: calc(100% + 10px);
+        line-height: calc(100% + 12px);
+    }
+
+
+    .product_use_cases .item .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 12px);
+    }
+
+
+
+    /*------------------------
+        Product advantages
+    ------------------------*/
+    .product_advantages .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .product_advantages .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .product_advantages .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .product_advantages .item
+    {
+        padding: 44px 72px 44px 44px;
+
+        gap: 24px;
+    }
+
+
+    .product_advantages .item .name
+    {
+        font-size: 24px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .product_advantages .item .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 12px);
+    }
+
+
+
+    /*---------------------
+        Product license
+    ---------------------*/
+    .product_license .data
+    {
+        width: calc(100% - 600px);
+        padding: 60px 52px 60px 60px;
+    }
+
+
+    .product_license .data .title
+    {
+        margin-bottom: 24px;
+
+        line-height: calc(100% + 12px);
+    }
+
+
+    .product_license .data .section + .section
+    {
+        margin-top: 24px;
+    }
+
+
+    .product_license .data .label
+    {
+        margin-bottom: 20px;
+
+        line-height: calc(100% + 12px);
+    }
+
+
+    .product_license .data .items
+    {
+        font-size: 14px;
+        line-height: calc(100% + 12px);
+
+        gap: 12px;
+    }
+
+
+
+    .product_license .block_head
+    {
+        width: 500px;
+        margin-right: 20px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .tariffs .block_head .desc
+    {
+        width: 880px;
+
+        font-size: 22px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .tariffs .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .tariffs .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .tariffs .tariff
+    {
+        border-radius: 40px;
+    }
+
+
+    .tariffs .tariff .name
+    {
+        padding: 5px 10px;
+
+        font-size: 18px;
+    }
+
+
+    .tariffs .tariff .price
+    {
+        font-size: 16px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .tariffs .tariff .price span
+    {
+        line-height: calc(100% + 12px);
+    }
+
+
+    .tariffs .tariff .exp
+    {
+        padding: 8px 12px;
+
+        font-size: 16px;
+        line-height: calc(100% + 12px);
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form
+    {
+        padding-block: 60px 68px;
+    }
+
+
+    .action_form .block_head
+    {
+        width: 548px;
+    }
+
+
+    .action_form .block_head .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 12px);
+    }
+
+
+    .action_form .form
+    {
+        width: 700px;
     }
 }
